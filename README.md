@@ -1,2 +1,3 @@
 # Sneakers
-figma_főoldal_gép tervezés
+figma_főoldal_gép_méret tervezés
+legfőbb_választás_gép_méret kész
