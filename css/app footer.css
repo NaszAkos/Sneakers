@@ -3,6 +3,7 @@
 }
 .magyO{
     text-align: right;
+    padding: 5px;
 }
 .magyO>img{
     width: 25px;
@@ -24,4 +25,8 @@
 }
 .copyright{
     text-align: left;
+    padding: 5px;
+}
+.oszlopok{
+    width: 98%;
 }
