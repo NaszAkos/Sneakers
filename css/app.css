@@ -1,6 +1,15 @@
+.vonal-vizsz{
+    background-color: #050505;
+    width: 100%;
+    height: 4px; 
+}
+.vonal{
+    background-color: #050505;
 
-
-
+}
 .logo{
     width: 150px;
+}
+.Cipo{
+    width: 250px;
 }
