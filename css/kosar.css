@@ -2,7 +2,7 @@
     padding: 0px;
     margin: 0px;
 }
-.ajanlas{
+.kosar{
     background-color: #f4f4f4;
 }
 .valaszto{
@@ -42,4 +42,9 @@
 }
 .ajanlas_cim{
     text-align: start;
+}
+h3{
+    text-decoration: none;
+    color: rgb(175, 43, 164);
+    color: black;
 }
