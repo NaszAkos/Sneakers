@@ -1,3 +1,11 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+}
+.row{
+    display: flex
+}
 .vonal-vizsz{
     background-color: #050505;
     width: 100%;
@@ -12,4 +20,36 @@
 }
 .Cipo{
     width: 250px;
+}
+.header{
+    width: 100%;
+
+}
+.footer{
+    width: 100%;
+    height: 350px;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+    display: block;
+    max-width: 100%;
+}
+#fejlec{
+    height: 55px;
+}
+#lablec{
+    height: 338px;
+    padding: 0px;
+    margin: 0px;
+}
+@media screen and (max-width: 819px){
+    #fejlec{
+        height: 44px;
+    }
+}
+@media screen and (max-width: 785px){
+    #lablec{
+        height: 721px;
+    }
 }

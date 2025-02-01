@@ -1,4 +1,4 @@
-#footer{
+.footer_f{
     background-color: #D9D9D9;
 }
 .magyO{
@@ -8,19 +8,20 @@
 .magyO>img{
     width: 25px;
 }
-.footer_logo{
-    width: 50px;
-    margin-top: 9px;
-}
 .part_nev{
     padding: 0px;
     margin: 0px;
     text-align: right;
     margin-right: 20px;
 }
+.footer_logo{
+    width: 50px;
+    margin-top: 9px;
+}
 .part_kep{
     padding: 0px;
     margin: 0px;
+    margin-top: -6px;
     text-align: left;
 }
 .copyright{

@@ -1,19 +1,28 @@
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+h3{
+    text-align: center;
+}
 .nepszeru{
     background-color: #E4E3E3;
-    height: 500px;
-}
-
-.Cipo{
-    width: 250px;
+    width: 100%;
+    padding: 40px;
 }
 .valasztasok{
-    margin-left: 10px;
+    margin-inline: 10px;
+    text-align: center;
 }
-.szoveg1{
-    margin-top: 150px;
-    margin-left: 30px;
+.Cipo{
+    width: 250px;
+    margin-right: 200px;
 }
-.szoveg2{
-    margin-top: -400px;
-    margin-left: 1000px;
+.sneaker-img {
+    max-width: 100%;
+    height: auto;
+}
+a{
+    color: black;
+    text-decoration: none;
 }

@@ -1,9 +1,12 @@
-#header{
-    margin-top: 10px;
+body{
+    padding: 0px;
+    margin: 0px;
 }
-
+.sneakerz{
+    width: 170px;
+}
 .logo{
-    width: 100px;
+    width: 80px;
     margin-top: 10px;
 }
 
@@ -11,17 +14,56 @@
 .kereses{
     color: black;
     background-color: #F8F5F5;
-    border-radius: 30px;
+    border-radius: 20px;
+    border: 0px;
     text-decoration: none;
-    font-size: 150%;
+    font-size: 20px;
     float: right;
     width: 200px;
-    height: 60px;
-    margin-top: 10px;
+    height: 40px;
+    margin-right: 5px;
+    margin-top: 8px;
 }
-
-.kosar{
+.kereses input{
+    background-color: #F8F5F5;
+    border-color: #F8F5F5;
+    border-radius: 20px;
+    border: 0px;
+    font-size: 20px;
     float: right;
-    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+    padding-left: 14px;
 }
-
+.kereses img{
+    width: 50px;
+}
+.kosar_{
+    float: right;
+    background-color: #fff;
+}
+.kosar_>img{
+    width: 90px;
+}
+@media screen and (max-width: 802px){
+    .logo{
+        width: 50px;
+    }
+    .kereses input{
+        display: none;
+    }
+    .kereses{
+        width: 40px;
+        height: 30px;
+        border-radius: 15px;
+    }
+    .kereses img{
+        width: 40px;
+    }
+    .sneakerz{
+        width: 140px;
+    }
+    .kosar_ img{
+        width: 70px;
+    }
+}
