@@ -10,3 +10,7 @@ fetch('footer.html')
                 document.getElementById('lablec').innerHTML = data;
             })
             .catch(error => console.error('Hiba történt:', error));
+            let lastScrollTop = 0;
+            const header = document.getElementById("header");
+
+
