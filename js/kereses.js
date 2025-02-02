@@ -24,3 +24,15 @@ function keres() {
       }
     }
   }
+
+  // 1. lépés: Szerezd meg az iframe elemet.
+  const iframe = document.getElementById('fejlec');
+
+  // 2. lépés: Szerezd meg az iframe tartalmát.
+  const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+
+  // 3. lépés: Válaszd ki a kívánt elemet az iframe tartalmában.
+  const element = iframeDocument.getElementById('keresesikon');
+
+  // 4. lépés: Módosítsd az elem stílusát.
+  element.style.display = 'none';
