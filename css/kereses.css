@@ -6,9 +6,8 @@
     text-decoration: none;
     font-size: 20px;
     float: center;
-    width: 1000px;
+    width: 96%;
     height: 40px;
-    margin-right: 5px;
     margin-top: 20px;
     margin: 20px;
 }
@@ -26,7 +25,7 @@
 .kereses img{
     width: 35px;
     margin-left: 5px;
-    margin-top: 3px;
+    margin-top: -5px;
 }
 .kosar_{
     float: right;
