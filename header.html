@@ -14,13 +14,20 @@
             <img class="logo" src="img/logo/EA7 fekete logo.png" alt="">
             <img class="logo" src="img/logo/Yeezy fekete logo.png" alt="">
             <img class="logo" src="img/logo/adidas fekete logo.png" alt="">
-            <div class="kereses"><a href=""><img src="img/cipők/főoldal/kereses.png" alt=""></a><input placeholder="Keresés"></input></div>
+            <div class="kereses"><a href=""><img src="img/cipők/főoldal/kereses.png" alt=""></a><input id="kereses_inp" placeholder="Keresés" onkeypress="handleKeyPress(event)"></input></div>
             <a href="kosár.html" target="_parent" class="kosar_"><img src="img/cipők/főoldal/kosar.png" alt=""></a>
             
             
     </div>
-
-    
+    <script>
+        function handleKeyPress(event) {
+            if (event.key === "Enter") {
+                let text = document.getElementById("kereses_inp").value;
+                localStorage.setItem("kereses_szoveg", text); // Szöveg mentése
+                window.top.location.href = "kereses.html"; // Átirányítás a másik oldalra
+            }
+        }
+    </script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
 </body>
