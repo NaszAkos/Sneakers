@@ -36,7 +36,7 @@ iframe{
     max-width: 100%;
 }
 #fejlec{
-    height: 55px;
+    height: 58px;
 }
 #lablec{
     height: 338px;
@@ -51,5 +51,11 @@ iframe{
 @media screen and (max-width: 785px){
     #lablec{
         height: 721px;
+    }
+}
+
+@media screen and (max-width: 517px){
+    #fejlec{
+        height: 38px;
     }
 }

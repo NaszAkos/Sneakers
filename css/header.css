@@ -31,12 +31,14 @@ body{
     border: 0px;
     font-size: 20px;
     float: right;
-    width: 150px;
+    width: 160px;
     height: 40px;
     padding-left: 14px;
 }
 .kereses img{
-    width: 50px;
+    width: 35px;
+    margin-left: 5px;
+    margin-top: 3px;
 }
 .kosar_{
     float: right;
@@ -58,12 +60,40 @@ body{
         border-radius: 15px;
     }
     .kereses img{
-        width: 40px;
+        margin-left: 8px;
+        margin-top: -8px;
+        width: 25px;
     }
     .sneakerz{
         width: 140px;
     }
     .kosar_ img{
         width: 70px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .logo{
+        width: 35px;
+    }
+    .kereses input{
+        display: none;
+    }
+    .kereses{
+        width: 30px;
+        height: 25px;
+        border-radius: 12,5px;
+    }
+    .kereses img{
+        width: 20px;
+        margin-left: 5px;
+        margin-top: -10px;
+    }
+    .sneakerz{
+        width: 100px;
+    }
+    .kosar_ img{
+        margin-top: 3px;
+        width: 50px;
     }
 }
