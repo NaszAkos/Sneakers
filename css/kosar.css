@@ -51,3 +51,12 @@ a{
 .kosar_{
     display: none;
 }
+@media screen and (max-width: 500px){
+    .fizetes{
+        width: 150px;
+        height: 50px;
+        border-radius: 25px;
+        font-size: 30px;
+        padding: 3px;
+    }
+}

@@ -27,13 +27,13 @@
     margin-left: 5px;
     margin-top: -5px;
 }
-.kosar_{
+/*.kosar_{
     float: right;
     background-color: #fff;
 }
 .kosar_>img{
     width: 90px;
-}
+}*/
 .talalat{
     display: none;
 }
@@ -41,4 +41,43 @@
     font-size: 30px;
     color: black;
     text-decoration: none;
+}
+.talalatok li{
+    border: black;
+}
+#nincs_tal{
+    display: none;
+    color: #3a3a3a; 
+}
+#nincs_tal>img{
+    width: 300px;
+    margin-left: 20%;
+}
+@media screen and (max-width: 700px){
+    .kereses input{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 500px){
+    .kereses{
+        margin-inline: 2%;
+    }
+    .kereses img{
+        width: 10%;
+    }
+    .kereses input{
+        width: 88%;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .kereses{
+        margin-inline: 2%;
+    }
+    .kereses img{
+        width: 10%;
+    }
+    .kereses input{
+        width: 70%;
+    }
 }

@@ -59,3 +59,8 @@ iframe{
         height: 38px;
     }
 }
+@media screen and (max-width: 400px){
+    #lablec{
+        height: 745px;
+    }
+}
