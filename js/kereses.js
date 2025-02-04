@@ -5,12 +5,15 @@ function keres() {
     var filter = input.value.toUpperCase();
     var ul = document.getElementById("talalatok");
     var li = ul.getElementsByTagName("li");
+    let tal = 0;
   
     // Ha az input üres, akkor minden elem rejtve marad
     if (filter === "") {
       for (let i = 0; i < li.length; i++) {
         li[i].style.display = "none";
+        document.getElementById("hr1").style.display = "none";
       }
+      document.getElementById("nincs_tal").style.display = "none";
       return;
     }
   
@@ -19,11 +22,27 @@ function keres() {
       let a = li[i];
       if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
         a.style.display = "block";
+        //document.getElementById("hr1").style.display = "block";
+        tal = tal + 1
       } else {
         a.style.display = "none";
+        
+        //document.getElementById("hr1").style.display = "none";
+
       }
     }
+    if (tal>0){
+      document.getElementById("hr1").style.display = "block";
+    } else {
+      document.getElementById("hr1").style.display = "none";
+    }
+  var hr1 = document.getElementById("hr1");
+    if (hr1.style.display === "none" && filter !== "" && tal===0) {
+      document.getElementById("nincs_tal").style.display = "block";
+    } else {
+      document.getElementById("nincs_tal").style.display = "none";
   }
+}
 
   // 1. lépés: Szerezd meg az iframe elemet.
   const iframe = document.getElementById('fejlec');
