@@ -41,7 +41,7 @@ function keres() {
       document.getElementById("nincs_tal").style.display = "block";
     } else {
       document.getElementById("nincs_tal").style.display = "none";
-  }
+    }
 }
 
   // 1. lépés: Szerezd meg az iframe elemet.
