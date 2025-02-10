@@ -1,6 +1,7 @@
 document.getElementById("kereses_inp").value = localStorage.getItem("kereses_szoveg") || ""; // Betöltés
 keres()
 function keres() {
+    localStorage.setItem("kereses_szoveg", document.getElementById("kereses_inp").value); // Mentés
     var input = document.getElementById("kereses_inp");
     var filter = input.value.toUpperCase();
     var ul = document.getElementById("talalatok");
@@ -16,18 +17,15 @@ function keres() {
       document.getElementById("nincs_tal").style.display = "none";
       return;
     }
-  
     // Ha van érték az inputban, ellenőrizzük a találatokat
     for (let i = 0; i < li.length; i++) {
+      let p = li[i].querySelector("p.talalat");
       let a = li[i];
-      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      if (p.innerHTML.toUpperCase().indexOf(filter) > -1) {
         a.style.display = "block";
-        //document.getElementById("hr1").style.display = "block";
         tal = tal + 1
       } else {
         a.style.display = "none";
-        
-        //document.getElementById("hr1").style.display = "none";
 
       }
     }
@@ -46,7 +44,7 @@ function keres() {
 
 function handleKeyPress(event) {
   if (event.key === "Enter") {
-      keres()
+      keres();
   }
 }
 
