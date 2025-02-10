@@ -44,6 +44,12 @@ function keres() {
     }
 }
 
+function handleKeyPress(event) {
+  if (event.key === "Enter") {
+      keres()
+  }
+}
+
   // 1. lépés: Szerezd meg az iframe elemet.
   const iframe = document.getElementById('fejlec');
 
