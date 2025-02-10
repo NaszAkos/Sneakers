@@ -48,6 +48,7 @@ function handleKeyPress(event) {
   }
 }
 
+document.getElementById('fejlec').onload=function(){
   // 1. lépés: Szerezd meg az iframe elemet.
   const iframe = document.getElementById('fejlec');
 
@@ -58,4 +59,4 @@ function handleKeyPress(event) {
   const element = iframeDocument.getElementById('keresesikon');
 
   // 4. lépés: Módosítsd az elem stílusát.
-  element.style.display = 'none';
+  element.style.display = 'none';}

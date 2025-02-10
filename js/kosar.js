@@ -46,7 +46,7 @@ function tartalom_ell(){
 //window.onload = tartalom_ell; // Az oldal betöltésekor is frissíti a megjelenítést
 
 
-
+document.getElementById('fejlec').onload=function(){
 // 1. lépés: Szerezd meg az iframe elemet.
 const iframe = document.getElementById('fejlec');
 
@@ -57,4 +57,4 @@ const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
 const element = iframeDocument.getElementById('kosrikon');
 
 // 4. lépés: Módosítsd az elem stílusát.
-element.style.display = 'none';
+element.style.display = 'none';}
