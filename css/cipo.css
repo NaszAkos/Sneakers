@@ -1,6 +1,11 @@
 body{
     width: 100%;
     overflow-x: hidden;
+    width: 99.8%;
+    width: 100%;
+}
+iframe{
+    width: 102%;
 }
 .logo{
     width: 100%;
@@ -30,6 +35,11 @@ body{
     border-radius: 10px;
     font-size: 20px;
 }
+.meret:hover{
+    background-color: #c6c6c6;
+    transition: all 0.3s;
+    cursor: context-menu;
+}
 .meretek{
     margin-left: 7%;
     margin-bottom: 10px;
@@ -41,7 +51,7 @@ body{
     font-size: 35px;
 }
 .szin_kep{
-    margin-left: 10px;
+    margin-left: auto;
     margin-bottom: 10px;
 }
 .szin_kep .col-6{
@@ -68,9 +78,29 @@ body{
     margin-right: 10%;
     margin-bottom: 20px;
 }
-
+.szoveg .row, .visz1, .also{
+    width: 99%;
+}
+.also{
+    width: 100%;
+}
 @media screen and (min-width: 768px){
     .meretek{
         margin-top: 15%;
     }
 }
+@media screen and (max-width: 767px){
+    .kosarba>.gomb{
+        margin-top: 3%;
+    }
+}
+/*@media screen and (max-width: 767px){
+    body{
+        width: 99%;
+    }
+}
+@media screen and (min-width: 1200px){
+    body{
+        width: 99%;
+    }
+}*/

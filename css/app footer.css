@@ -1,3 +1,6 @@
+body{
+    overflow-y: hidden;
+}
 .footer_f{
     background-color: #D9D9D9;
 }

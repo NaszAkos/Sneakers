@@ -21,44 +21,39 @@ body{
 .Cipo{
     width: 250px;
 }
-.header{
-    width: 100%;
 
-}
-.footer{
-    width: 100%;
-    height: 350px;
-}
 iframe{
     width: 100%;
-    height: 100%;
     display: block;
     max-width: 100%;
+    overflow-y: hidden;
 }
 #fejlec{
-    height: 58px;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 #lablec{
     height: 338px;
     padding: 0px;
     margin: 0px;
-}
+}/*
 @media screen and (max-width: 819px){
     #fejlec{
         height: 44px;
     }
-}
+}*/
 @media screen and (max-width: 785px){
     #lablec{
         height: 721px;
     }
 }
-
+/*
 @media screen and (max-width: 517px){
     #fejlec{
         height: 38px;
     }
-}
+}*/
 @media screen and (max-width: 400px){
     #lablec{
         height: 745px;

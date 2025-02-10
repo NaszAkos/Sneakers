@@ -51,6 +51,13 @@ a{
 .kosar_{
     display: none;
 }
+.ajanlas>a{
+    border-radius: 10px;
+}
+.ajanlas>a:hover{
+    transition: all 0.3s;
+    background-color: #f3f3f3;  
+}
 @media screen and (max-width: 500px){
     .fizetes{
         width: 150px;
@@ -58,5 +65,10 @@ a{
         border-radius: 25px;
         font-size: 30px;
         padding: 3px;
+    }
+}
+@media screen and (min-width: 768px){
+    .tel_valaszto{
+        display: none;
     }
 }
