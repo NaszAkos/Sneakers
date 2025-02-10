@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/kosar.css">
-    <link rel="icon" type="image/x-icon" href="img/logo/sneakerz logo.png">
+    <link rel="icon" type="image/x-icon" href="img/logo/sneakerz logo 2.png">
 </head>
 <body>
     <iframe id="fejlec" src="header.html"></iframe>
@@ -16,12 +16,35 @@
             <div class="cim kosar_cim">
                     <h1>Kosár:</h1>
             </div>
-            <p class="ures_kosar">A kosara üres.</p>
+            <p id="ures_kosar">A kosara üres.</p>
+            <ul id="koras_tartalma">
+                <hr id="hr1">
+                <li id="NAF">
+                    <a href="cipok/Nike_Air_Force_1.html">Nike Air Force 1 49 990 Ft</a>
+                    <a class="eltavolitas" onclick="localStorage.setItem('NAF', '0');tartalom_ell();">
+                        <img src="img/cipők/főoldal/Eltávolítás.png" alt="">
+                    </a><hr>
+                </li>
+                <li id="AS">
+                    <a href="cipok/Adidas_superstar.html">Adidas Superstar 60 490 Ft</a>
+                    <a class="eltavolitas" onclick="localStorage.setItem('AS', '0');tartalom_ell();">
+                        <img src="img/cipők/főoldal/Eltávolítás.png" alt="">
+                    </a><hr>
+                </li>
+                <li id="YB">
+                    <a href="cipok/Yeezy_Boost_350_V2.html">Yeezy Boost 350 V2 108 490 Ft</a>
+                    <a class="eltavolitas" onclick="localStorage.setItem('YB', '0');tartalom_ell();">
+                        <img src="img/cipők/főoldal/Eltávolítás.png" alt="">
+                    </a><hr>
+                </li>
+            </ul>
+            
 
-            <h4>Termék ára: - Ft <br>
+
+            <h4>Termékek ára: <span id="ár"> - </span> Ft <br>
                 Kupon: - Ft <br>
                 Szállítás: Ingyenes</h4>
-            <div class="fizetes ">
+            <div id="fizetes">
                 Fizetés
             </div>
         </div>
@@ -29,9 +52,9 @@
             <div class="cim ajanlas_cim">
                 <h1>Ajánlásaink:</h1>
             </div>
-            <a href="#" class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <a href="cipok/Nike_Air_Force_1.html" class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                 <img class="Cipo" src="img/cipők/Nike Air Force 1 '07/air1.png" alt="">
-                <h3>Nike air force <br>
+                <h3>Nike Air Force <br>
                     49 990 Ft</h3>
             </a>
             <hr class="tel_valaszto">
@@ -47,7 +70,7 @@
                     60 490 Ft</h3>
             </a>
             <hr class="tel_valaszto">
-            <a href="#" class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <a href="cipok/Yeezy_Boost_350_V2.html" class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                 <img class="Cipo" src="img/cipők/főoldal/yeezy_b350.png" alt="">
                 <h3>Yeezy Boost 350 V2 <br>
                     108 490 Ft</h3>
@@ -57,21 +80,7 @@
     <div class="vonal-vizsz"></div>
     <iframe id="lablec"src="footer.html"></iframe>
 
-    <script>
-        // 1. lépés: Szerezd meg az iframe elemet.
-        const iframe = document.getElementById('fejlec');
-
-        // 2. lépés: Szerezd meg az iframe tartalmát.
-        const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
-
-        // 3. lépés: Válaszd ki a kívánt elemet az iframe tartalmában.
-        const element = iframeDocument.getElementById('kosrikon');
-
-        // 4. lépés: Módosítsd az elem stílusát.
-        element.style.display = 'none';
-    </script>
-
-
+    <script src="js/kosar.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
 </body>
