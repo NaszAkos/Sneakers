@@ -30,7 +30,7 @@ a{
     height: 100%;
 }
 .valasztasok>div{
-    border-radius: 30px;
+    border-radius: 30px;    
 }
 .valasztasok>div:hover{
     transition: all 0.3s;
@@ -45,4 +45,24 @@ a{
     .tel_valaszto{
         display: none;
     }
+}
+
+.szoveg2{
+    text-align: right;
+}
+
+.sz1{
+    font-size: 330%;
+}
+
+.sz2{
+    font-size: 330%;
+}
+
+.sz3{
+    font-size: 330%;
+}
+
+.sz4{
+    font-size: 330%;
 }

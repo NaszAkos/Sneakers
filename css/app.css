@@ -19,7 +19,7 @@ body{
     width: 150px;
 }
 .Cipo{
-    width: 250px;
+    max-width: 100%;
 }
 
 iframe{
