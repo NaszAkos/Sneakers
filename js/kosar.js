@@ -1,6 +1,12 @@
 /*localStorage.setItem("NAF", "1"); //érték 1
 localStorage.setItem("AS", "1");
-localStorage.setItem("YB", "1");*/
+localStorage.setItem("YB", "1");
+localStorage.setItem("EA7t", "1")
+localStorage.setItem("NAJ4", "1")
+localStorage.setItem("", "1")
+localStorage.setItem("YB", "1")
+localStorage.setItem("YB", "1")
+localStorage.setItem("YB", "1")*/
 tartalom_ell()
 function tartalom_ell(){
   let kosar_ft = 0;
@@ -23,6 +29,34 @@ function tartalom_ell(){
     kosar_ft+=60490
   } else {
     document.getElementById("AS").style.display = "none";
+  }
+
+  if (localStorage.getItem("NAJ4") === "1") {
+    document.getElementById("NAJ4").style.display = "block";
+    kosar_ft+=249990
+  } else {
+    document.getElementById("NAJ4").style.display = "none";
+  }
+
+  if (localStorage.getItem("EA7t") === "1") {
+    document.getElementById("EA7t").style.display = "block";
+    kosar_ft+=49990
+  } else {
+    document.getElementById("EA7t").style.display = "none";
+  }
+
+  if (localStorage.getItem("NR5") === "1") {
+    document.getElementById("NR5").style.display = "block";
+    kosar_ft+=29990
+  } else {
+    document.getElementById("NR5").style.display = "none";
+  }
+
+  if (localStorage.getItem("YFR") === "1") {
+    document.getElementById("YFR").style.display = "block";
+    kosar_ft+=95390
+  } else {
+    document.getElementById("YFR").style.display = "none";
   }
   // Ha a kosár üres, jelenjen meg az "ures_kosar" és ne legyen "hr1"
   if (kosar_ft === 0) {
