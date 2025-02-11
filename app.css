@@ -1,0 +1,62 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+}
+.row{
+    display: flex
+}
+.vonal-vizsz{
+    background-color: #050505;
+    width: 100%;
+    height: 5px; 
+}
+.vonal{
+    background-color: #050505;
+
+}
+.logo{
+    width: 150px;
+}
+.Cipo{
+    width: 250px;
+}
+
+iframe{
+    width: 100%;
+    display: block;
+    max-width: 100%;
+    overflow-y: hidden;
+}
+#fejlec{
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+#lablec{
+    height: 338px;
+    padding: 0px;
+    margin: 0px;
+}
+/*
+@media screen and (max-width: 819px){
+    #fejlec{
+        height: 44px;
+    }
+}*/
+@media screen and (max-width: 785px){
+    #lablec{
+        height: 721px;
+    }
+}
+/*
+@media screen and (max-width: 517px){
+    #fejlec{
+        height: 38px;
+    }
+}*/
+@media screen and (max-width: 400px){
+    #lablec{
+        height: 745px;
+    }
+}
