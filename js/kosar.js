@@ -58,7 +58,6 @@ function tartalom_ell(){
   } else {
     document.getElementById("YFR").style.display = "none";
   }
-  // Ha a kosár üres, jelenjen meg az "ures_kosar" és ne legyen "hr1"
   if (kosar_ft === 0) {
     document.getElementById("ures_kosar").style.display = "block";
     document.getElementById("hr1").style.display = "none";
