@@ -58,6 +58,20 @@ function tartalom_ell(){
   } else {
     document.getElementById("YFR").style.display = "none";
   }
+
+  if (localStorage.getItem("AO") === "1") {
+    document.getElementById("AO").style.display = "block";
+    kosar_ft+=49490
+  } else {
+    document.getElementById("AO").style.display = "none";
+  }
+
+  if (localStorage.getItem("EA7r") === "1") {
+    document.getElementById("EA7r").style.display = "block";
+    kosar_ft+=71116
+  } else {
+    document.getElementById("EA7r").style.display = "none";
+  }
   if (kosar_ft === 0) {
     document.getElementById("ures_kosar").style.display = "block";
     document.getElementById("hr1").style.display = "none";
