@@ -14,10 +14,22 @@ h3{
     margin-inline: 10px;
     text-align: center;
     width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
+
+.szoveg2{
+    text-align: right;
+}
+
+.sz1{
+    font-size: 275%;
+}
+
 .Cipo{
     width: 250px;
     margin-right: 200px;
+    
 }
 .sneaker-img {
     max-width: 100%;
@@ -30,12 +42,13 @@ a{
     height: 100%;
 }
 .valasztasok>div{
-    border-radius: 30px;    
+    border-radius: 30px;
 }
 .valasztasok>div:hover{
     transition: all 0.3s;
-    background-color: #f3f3f3; 
+    background-color: #f3f3f3;
 }
+
 @media screen and (max-width: 767px){
     .tel_valaszto{
         display: block;
@@ -45,24 +58,4 @@ a{
     .tel_valaszto{
         display: none;
     }
-}
-
-.szoveg2{
-    text-align: right;
-}
-
-.sz1{
-    font-size: 330%;
-}
-
-.sz2{
-    font-size: 330%;
-}
-
-.sz3{
-    font-size: 330%;
-}
-
-.sz4{
-    font-size: 330%;
 }
