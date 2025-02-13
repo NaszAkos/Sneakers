@@ -8,7 +8,10 @@ h3{
 .nepszeru{
     background-color: #E4E3E3;
     width: 100%;
-    padding: 40px;
+    max-width: 100%;
+}
+.nepszeru img{
+    max-width: 100%;
 }
 .valasztasok{
     margin-inline: 10px;
@@ -31,10 +34,6 @@ h3{
     margin-right: 200px;
     
 }
-.sneaker-img {
-    max-width: 100%;
-    height: auto;
-}
 a{
     color: black;
     text-decoration: none;
@@ -43,12 +42,22 @@ a{
 }
 .valasztasok>div{
     border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 .valasztasok>div:hover{
     transition: all 0.3s;
     background-color: #f3f3f3;
 }
 
+.valasztasok>div img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 @media screen and (max-width: 767px){
     .tel_valaszto{
         display: block;
