@@ -7,6 +7,10 @@ body{
 iframe{
     width: 102%;
 }
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
 .logo{
     width: 100%;
     height: 64px;
@@ -18,8 +22,14 @@ iframe{
     margin: 2px;
 }
 .kepek{
-    width: 100%;
     height: 500px;
+}
+.kep{
+    height: 100%;
+}
+.kep img{
+    max-height: 100%;
+    max-width: 100%;
 }
 .szoveg h1{
     margin-top: 10%;
@@ -89,12 +99,62 @@ iframe{
 .also{
     width: 100%;
 }
-@media screen and (min-width: 768px){
+#closeButton {
+    border-radius: 50%;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 4; /* A képek felett */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    display: none; /* Alapértelmezés szerint rejtve */
+    background-color: rgba(255, 255, 255, 0);
+}
+#closeButton img{
+    width: 50px;
+    border-radius: 50%;
+}
+#closeButton img:hover{
+    background-color: #cecece;
+}
+/*@media screen and (min-width: 1900px){
+    .kepek{
+        height: 700px;
+    }
+}
+@media screen and (max-width: 1899px){
+    .kepek{
+        height: 600px;
+    }
+}
+@media screen and (max-width: 1400px){
+    .kepek{
+        height: 500px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .kepek{
+        height: 400px;
+    }
+}
+@media screen and (max-width: 776px){
+    .kepek{
+        height: 300px;
+    }
+}
+@media screen and (min-width: 767px){
+    .kepek{
+        height: 100%;
+    }
+}*/
+@media screen and (max-width: 768px){
     .meretek{
         margin-top: 15%;
     }
 }
-
 @media screen and (max-width: 767px){
     .kosarba>.gomb{
         margin-top: 3%;
