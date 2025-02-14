@@ -88,11 +88,12 @@ body{
         width: 30px;
         height: 25px;
         border-radius: 12,5px;
+        margin-top: 5px;
     }
     .kereses img{
         width: 30px;
         margin-left: 0px;
-        margin-top: -8px;
+        margin-top: -10px;
     }
     .sneakerz{
         width: 100px;

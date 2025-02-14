@@ -10,6 +10,7 @@
     height: 40px;
     margin-top: 20px;
     margin: 20px;
+    position: sticky;
 }
 
 .kereses input{

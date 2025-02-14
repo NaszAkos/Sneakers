@@ -8,6 +8,11 @@
 .cim{
     background-color: #D9d9d9;
     height: 70px;
+    /*position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 29;
+    display: flex;*/
 }
 .cim>h1{
     font-weight: bold;
