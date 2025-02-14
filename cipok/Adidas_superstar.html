@@ -96,29 +96,7 @@
     <div class="vonal-vizsz"></div>
     <iframe id="lablec"src="/footer.html"></iframe>
 
-    <script>
-      szin_ell(nev)
-      function kosar(nev){
-        if (localStorage.getItem(nev) === "1") {
-          localStorage.setItem(nev, '0');
-          szin_ell(nev)
-        } else {
-          localStorage.setItem(nev, '1');
-          window.top.location.href = "/kosár.html";
-          szin_ell(nev)
-        }
-      }
-      function szin_ell(nev) {
-      if (localStorage.getItem(nev) === "1") {
-          document.getElementById("gomb").innerText = "Törlés a kosárból"
-          document.getElementById("gomb").style.backgroundColor = "#c62d2d"
-          document.getElementById("gomb").style.height="120px"
-      } else {
-        document.getElementById("gomb").innerText = "Kosárba"
-        document.getElementById("gomb").style.backgroundColor = "#53E558"
-        document.getElementById("gomb").style.height="70px"
-      }}
-    </script>
+    <script src="/js/cipo.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/app.js"></script>
 </body>
