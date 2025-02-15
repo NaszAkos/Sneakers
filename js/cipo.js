@@ -5,7 +5,7 @@ szin_ell(nev)
           szin_ell(nev)
         } else {
           localStorage.setItem(nev, '1');
-          window.top.location.href = "/kosár.html";
+          window.top.location.href = "../kosár.html";
           szin_ell(nev)
         }
       }

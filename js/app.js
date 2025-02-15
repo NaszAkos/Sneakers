@@ -1,4 +1,7 @@
 document.getElementById('fejlec').onload=function(){fejlec_meretez()}
+document.addEventListener("DOMContentLoaded", function () {fejlec_meretez();});
+window.onload = function () {fejlec_meretez();};
+fejlec_meretez()
 document.getElementById('lablec').onload=function(){lablec_meretez()}
 function fejlec_meretez() {
     let iframe = document.getElementById("fejlec");
