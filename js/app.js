@@ -46,24 +46,26 @@ window.addEventListener("scroll", function() {
             navbar.style.boxShadow = "none"
         }
     }
-    if (currentScroll > lastScrollTop) {//2
-        if (window.location.href.includes("kereses")) {
-            document.getElementById("keresest").style.top = "3px";
-            document.getElementById("keresest").style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)"
-        }
-        if (currentScroll > 73) {
-            document.getElementById("keresest").style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)"
+    if (window.location.href.includes("/kereses")) {
+        if (currentScroll > lastScrollTop) {//2
+            if (window.location.href.includes("kereses")) {
+                document.getElementById("keresest").style.top = "3px";
+                document.getElementById("keresest").style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)"
+            }
+            if (currentScroll > 73) {
+                document.getElementById("keresest").style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)"
+            } else {
+                document.getElementById("keresest").style.boxShadow = "none"
+            }
+            
         } else {
-            document.getElementById("keresest").style.boxShadow = "none"
-        }
-        
-    } else {
-        document.getElementById("keresest").style.top = "70px";
-        if (currentScroll > 23) {
-            document.getElementById("keresest").style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)"
-        } else {
-            document.getElementById("keresest").style.boxShadow = "none"
-        }
+            document.getElementById("keresest").style.top = "70px";
+            if (currentScroll > 23) {
+                document.getElementById("keresest").style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)"
+            } else {
+                document.getElementById("keresest").style.boxShadow = "none"
+            }
+        }   
     }
     setTimeout(function() {
         if (navbar.style.top === "-60px") {
