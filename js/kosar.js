@@ -79,29 +79,47 @@ function tartalom_ell(){
     document.getElementById("ures_kosar").style.display = "none";
     document.getElementById("hr1").style.display = "block";
   }
+  if (kosar_ft < 100000){
+    document.getElementById("száll_ár").innerText = 1000+" Ft"
+  }
   if (kosar_ft === 0){
     kosar_ft = "-"
+    document.getElementById("ár").innerText = kosar_ft
     document.getElementById("fizetes").style.backgroundColor = "#868686"
     document.getElementById("fizetes").innerText = "Nincs termék"
   } else {
     document.getElementById("fizetes").style.backgroundColor = "#53E558"
+    document.getElementById("ár").innerText = kosar_ft+" Ft"
   }
-  document.getElementById("ár").innerText = kosar_ft
 }
+document.getElementById('fejlec').onload=function(){
+  const iframe = document.getElementById('fejlec');
+  const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+  const element = iframeDocument.getElementById('kosrikon');
+  element.style.display = 'none';}
+kupon_bev()
+function kupon_bev() {
+  let productPrice = 5000;
+  let shippingCost = 1000;
+  let couponInput = document.getElementById("coupon-input").value.trim();
+  let discount = 0;
+  let couponText = "Nincs megadva";
 
+  // Kuponok definiálása
+  if (couponInput === "SALE10") {
+      discount = productPrice * 0.1; // 10% kedvezmény
+      couponText = "-10% kedvezmény (" + discount.toFixed(0) + " Ft)";
+  } else if (couponInput === "FREESHIP") {
+      discount = shippingCost; // Ingyenes szállítás
+      couponText = "-1000 Ft (Ingyenes szállítás)";
+  } else if (couponInput !== "") {
+      couponText = "Érvénytelen kód";
+  }
+
+  // Frissítés az oldalon
+  document.getElementById("coupon-discount").innerText = couponText;
+  let totalPrice = productPrice + shippingCost - discount;
+  document.getElementById("total-price").innerText = totalPrice + " Ft";
+}
 // Meghívjuk a tartalom_ell függvényt, ha van változás a localStorage-ban
 //window.onload = tartalom_ell; // Az oldal betöltésekor is frissíti a megjelenítést
-
-
-document.getElementById('fejlec').onload=function(){
-// 1. lépés: Szerezd meg az iframe elemet.
-const iframe = document.getElementById('fejlec');
-
-// 2. lépés: Szerezd meg az iframe tartalmát.
-const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
-
-// 3. lépés: Válaszd ki a kívánt elemet az iframe tartalmában.
-const element = iframeDocument.getElementById('kosrikon');
-
-// 4. lépés: Módosítsd az elem stílusát.
-element.style.display = 'none';}
