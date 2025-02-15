@@ -16,7 +16,7 @@ szin_ell(nev)
           document.getElementById("gomb").style.height="120px"
       } else {
         document.getElementById("gomb").innerText = "Kosárba"
-        document.getElementById("gomb").style.backgroundColor = "#53E558"
+        document.getElementById("gomb").style.backgroundColor = "#15ff00"
         document.getElementById("gomb").style.height="70px"
       }}
 
