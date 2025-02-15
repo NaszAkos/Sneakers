@@ -29,6 +29,7 @@ iframe{
     overflow-y: hidden;
 }
 #fejlec{
+    height: 60px;/* VIGYÁZAT!!! ez csak akkor jó ha a fejléc mérete ennél sose nagyobb*/
     top: 0;
     left: 0;
     width: 100%;
