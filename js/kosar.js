@@ -88,7 +88,7 @@ function tartalom_ell(){
     document.getElementById("fizetes").style.backgroundColor = "#868686"
     document.getElementById("fizetes").innerText = "Nincs termék"
   } else {
-    document.getElementById("fizetes").style.backgroundColor = "#53E558"
+    document.getElementById("fizetes").style.backgroundColor = "#15ff00"
     document.getElementById("ár").innerText = kosar_ft+" Ft"
   }
 }
