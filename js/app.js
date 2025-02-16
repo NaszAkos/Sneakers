@@ -24,23 +24,42 @@ window.onload = function () {fejlec_meretez();};
 fejlec_meretez()
 document.getElementById('lablec').onload=function(){lablec_meretez()}
 
-/*sutiell()
+document.addEventListener("DOMContentLoaded", function() {
+    sutiell();
+});
 // Ellenőrzi, hogy a sütik elfogadása megtörtént-e
 function sutiell(){
-if (localStorage.getItem('suti_elfogad') === 0) {
+if (localStorage.getItem('suti_elfogad') === "0") {
     document.getElementById('cookie-banner').style.display = 'none';
-    document.getElementById("fejlec_tak").style.display = 'none';
+    document.getElementById("sutik").style.display = 'none';
 } else {
     document.getElementById('cookie-banner').style.display = 'block';
-    document.getElementById("fejlec_tak").style.display = 'block';
-    document.getElementById("fejlec_tak").style.zIndex = '300'
+    
+    document.getElementById("sutik").style.display = 'block';
+    document.getElementById("sutik").style.zIndex = '300'
 }
-}*/ 
+}
+document.getElementById('sutik').addEventListener('load', function() {
+    let iframeDoc = document.getElementById('sutik').contentDocument;
+
+    if (!iframeDoc) {
+        console.error("Nem lehet hozzáférni az iframe dokumentumához!");
+        return;
+    }
+
+    let observer = new MutationObserver(function(mutationsList) {
+        console.log("Változás történt az iframe-ben!");
+        sutiell()
+    });
+
+    observer.observe(iframeDoc.body, { childList: true, subtree: true });
+});
 
 function suti_elog(){
     // Sütik elfogadása
-    localStorage.setItem('suti_elfogad', 1);
+    localStorage.setItem('suti_elfogad', "1");
     document.getElementById('cookie-banner').style.display = 'none';
+    document.getElementById('sutik').style.display = 'none';
 };
 
 
