@@ -34,11 +34,23 @@ if (localStorage.getItem('suti_elfogad') === "0") {
     document.getElementById("sutik").style.display = 'none';
 } else {
     document.getElementById('cookie-banner').style.display = 'block';
-    
+    window.parent.postMessage("sutik_elrejt", "*"); //üzenet a fő oldalnak
     document.getElementById("sutik").style.display = 'block';
     document.getElementById("sutik").style.zIndex = '300'
 }
 }
+
+window.addEventListener("message", function(event) {//fő oldal fogadja az üzenetet
+    if (event.data === "sutik_elrejt") {
+        console.log("Sütik elrejtése...");
+        let cookieBanner = document.getElementById("cookie-banner");
+        if (cookieBanner) {
+            cookieBanner.style.display = "none";
+        }
+    }
+});
+
+
 document.getElementById('sutik').addEventListener('load', function() {
     let iframeDoc = document.getElementById('sutik').contentDocument;
 
