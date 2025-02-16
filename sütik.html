@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sütik</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <!--p onclick="localStorage.setItem('cookies-accepted', 1); sutiell()">megjelen</p>
+    <p onclick="localStorage.setItem('cookies-accepted', 0); sutiell()">eltűn</p-->
+
+    <div id="cookie-banner" class="cookie-banner" onclick="suti_elog()">
+            <p>Ez a weboldal sütiket használ a felhasználói élmény javítása érdekében. A weboldal használatával elfogadod a sütik használatát.</p>
+        <button id="accept-cookies">Elfogadom</button>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
