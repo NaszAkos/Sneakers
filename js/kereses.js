@@ -1,3 +1,9 @@
+document.getElementById('fejlec').onload=function(){
+  const iframe = document.getElementById('fejlec');
+  const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+  const element = iframeDocument.getElementById('keresesikon');
+  element.style.display = 'none';
+}  
 document.getElementById("kereses_inp").value = localStorage.getItem("kereses_szoveg") || ""; // Betöltés
 keres()
 function keres() {
@@ -47,12 +53,6 @@ function handleKeyPress(event) {
       keres();
   }
 }
-
-document.getElementById('fejlec').onload=function(){
-  const iframe = document.getElementById('fejlec');
-  const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
-  const element = iframeDocument.getElementById('keresesikon');
-  element.style.display = 'none';}
 
 const iframe = document.getElementById('fejlec');
 const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;

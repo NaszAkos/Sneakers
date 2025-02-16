@@ -1,8 +1,49 @@
+/*document.addEventListener("DOMContentLoaded", function() {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "sütik.html", true);
+    
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            document.getElementById("fejlec_tak").insertAdjacentHTML("beforeend", xhr.responseText);
+            document.getElementById("fejlec_tak").style.display = "block"
+        }
+    };
+
+    xhr.send();
+});*/
+
+
+/*document.querySelectorAll("a").forEach(link => {
+    link.style.textDecoration = "none";
+});*/
+
+
 document.getElementById('fejlec').onload=function(){fejlec_meretez()}
 document.addEventListener("DOMContentLoaded", function () {fejlec_meretez();});
 window.onload = function () {fejlec_meretez();};
 fejlec_meretez()
 document.getElementById('lablec').onload=function(){lablec_meretez()}
+
+/*sutiell()
+// Ellenőrzi, hogy a sütik elfogadása megtörtént-e
+function sutiell(){
+if (localStorage.getItem('suti_elfogad') === 0) {
+    document.getElementById('cookie-banner').style.display = 'none';
+    document.getElementById("fejlec_tak").style.display = 'none';
+} else {
+    document.getElementById('cookie-banner').style.display = 'block';
+    document.getElementById("fejlec_tak").style.display = 'block';
+    document.getElementById("fejlec_tak").style.zIndex = '300'
+}
+}*/ 
+
+function suti_elog(){
+    // Sütik elfogadása
+    localStorage.setItem('suti_elfogad', 1);
+    document.getElementById('cookie-banner').style.display = 'none';
+};
+
+
 function fejlec_meretez() {
     let iframe = document.getElementById("fejlec");
 
@@ -91,6 +132,7 @@ window.addEventListener('resize', function() {
     fejlec_meretez()
     lablec_meretez()
   });
+
 
 /*document.addEventListener("DOMContentLoaded", function () {
     let currentPage = window.location.pathname; // Az aktuális oldal útvonala
