@@ -76,7 +76,22 @@ a{
 .eltavolitas:hover{
     cursor: pointer;
 }
-
+input {
+    padding: 5px;
+    width: 90%;
+    /*border-radius: 20px;*/
+    border: 1px solid black;
+    color: black;
+    background-color: #ffffff;
+    border-radius: 0px;
+    text-decoration: none;
+    font-size: 20px;
+}
+button {
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
 @media screen and (max-width: 500px){
     .fizetes{
         width: 150px;

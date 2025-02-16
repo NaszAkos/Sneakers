@@ -10,9 +10,14 @@
     height: 40px;
     margin-top: 20px;
     margin: 20px;
-    position: sticky;
 }
-
+#keresest{
+    top: 0;
+    left: 0;
+    z-index: 29;
+    position: sticky;
+    transition: top 0.3s, opacity 0.3s ease;
+}
 .kereses input{
     background-color: #F8F5F5;
     border-color: #F8F5F5;
