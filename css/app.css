@@ -35,6 +35,8 @@ iframe{
     position: fixed;
     bottom: 0;
     left: 0;
+    height: 108px;
+    opacity: 97%;
 }
 #fejlec{
     height: 60px;/* VIGYÁZAT!!! ez csak akkor jó ha a fejléc mérete ennél sose nagyobb*/
@@ -86,7 +88,17 @@ iframe{
 .cookie-banner button:hover {
     background-color: #45a049;
 }
-
+.cookie-banner img{
+    background-color: rgba(rgba(0, 0, 0, 0), green, blue, alpha);
+    width: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
 /*
 @media screen and (max-width: 819px){
     #fejlec{
