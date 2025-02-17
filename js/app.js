@@ -18,10 +18,13 @@
 });*/
 
 //localStorage.clear();
+let fejlec_meret = 0
 document.getElementById('fejlec').onload=function(){fejlec_meretez()}
-document.addEventListener("DOMContentLoaded", function () {fejlec_meretez();});
-window.onload = function () {fejlec_meretez();};
-fejlec_meretez()
+document.getElementById('sutik').onload=function(){sutik_meretez()}
+document.addEventListener("DOMContentLoaded", function () {fejlec_meretez();sutik_meretez()});
+window.onload = function () {fejlec_meretez();sutik_meretez();};
+fejlec_meretez();
+sutik_meretez();
 document.getElementById('lablec').onload=function(){lablec_meretez()}
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -100,12 +103,35 @@ function fejlec_meretez() {
             const header = iframe.contentDocument.getElementById("mind");
             if (header) {
                 iframe.style.height = header.offsetHeight + "px";
+                fejlec_meret = header.offsetHeight
                 //document.getElementById("fejlec_tak").style.display = "block"
                 //document.getElementById("fejlec_tak").style.height = header.offsetHeight + "px";
             }
         }, 100);
     }
 }
+
+function sutik_meretez() {
+    /*let suti = document.getElementById("sutik");
+
+    if (suti.contentWindow && suti.contentDocument) {
+        setTimeout(() => {
+            const magas = suti.contentDocument.getElementById("mind");
+
+            // Ellenőrizzük, hogy a 'mind' elem létezik-e
+            if (magas) {
+                // Frissítjük az iframe magasságát a 'mind' elem alapján
+                suti.style.height = magas.offsetHeight + "px";
+            } else {
+                console.warn("A 'mind' elem nem található az iframe-ben.");
+            }
+        }, 100);
+    } else {
+        console.error("Az iframe tartalma nem érhető el.");
+    }*/
+}
+
+
 let lastScrollTop = 0;
 const navbar = document.getElementById("fejlec");
 
@@ -148,7 +174,7 @@ window.addEventListener("scroll", function() {
             }
             
         } else {
-            document.getElementById("keresest").style.top = "70px";
+            document.getElementById("keresest").style.top = fejlec_meret + 10 + "px";
             if (currentScroll > 23) {
                 document.getElementById("keresest").style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)"
             } else {
@@ -179,6 +205,7 @@ function lablec_meretez(){
 window.addEventListener('resize', function() {
     fejlec_meretez()
     lablec_meretez()
+    sutik_meretez()
   });
 
 
