@@ -11,9 +11,10 @@
     <!--p onclick="localStorage.setItem('cookies-accepted', 1); sutiell()">megjelen</p>
     <p onclick="localStorage.setItem('cookies-accepted', 0); sutiell()">eltűn</p-->
 
-    <div id="cookie-banner" class="cookie-banner" onclick="suti_elog()">
+    <div id="cookie-banner" class="cookie-banner">
             <p>Ez a weboldal sütiket használ a felhasználói élmény javítása érdekében. A weboldal használatával elfogadod a sütik használatát.</p>
-        <button id="accept-cookies">Elfogadom</button>
+            <img src="img/cipők/főoldal/Eltávolítás.png" alt="" onclick="suti_bezar()">
+            <button onclick="suti_elfog()" id="accept-cookies">Elfogadom</button>
     </div>
 
     <script src="js/bootstrap.min.js"></script>
