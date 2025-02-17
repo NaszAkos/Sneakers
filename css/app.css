@@ -6,9 +6,6 @@ body{
 .row{
     display: flex
 }
-a{
-    text-align: none    ;
-}
 .vonal-vizsz{
     background-color: #050505;
     width: 100%;
@@ -35,8 +32,9 @@ iframe{
     position: fixed;
     bottom: 0;
     left: 0;
-    height: 108px;
     opacity: 97%;
+    height: 100vh;
+    z-index: 29;
 }
 #fejlec{
     height: 60px;/* VIGYÁZAT!!! ez csak akkor jó ha a fejléc mérete ennél sose nagyobb*/
@@ -72,7 +70,9 @@ iframe{
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-inline: 25px;
     font-size: 14px;
 }
 
@@ -92,12 +92,16 @@ iframe{
     background-color: rgba(rgba(0, 0, 0, 0), green, blue, alpha);
     width: 30px;
     position: absolute;
-    top: 10px;
+    top: 5px;
     right: 10px;
     background: none;
     border: none;
     font-size: 20px;
     cursor: pointer;
+    filter: invert(100%);
+}
+.cookie-banner p{
+    margin-inline: 20px;
 }
 /*
 @media screen and (max-width: 819px){
@@ -121,3 +125,14 @@ iframe{
         height: 745px;
     }
 }
+/*@media screen and (max-width: 349px) {
+    #sutik {
+        height: 130px;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 2000px) {
+    #sutik {
+        height: 108px;
+    }
+}*/
