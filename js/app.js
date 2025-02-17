@@ -17,7 +17,7 @@
     link.style.textDecoration = "none";
 });*/
 
-
+//localStorage.clear();
 document.getElementById('fejlec').onload=function(){fejlec_meretez()}
 document.addEventListener("DOMContentLoaded", function () {fejlec_meretez();});
 window.onload = function () {fejlec_meretez();};
@@ -27,31 +27,42 @@ document.getElementById('lablec').onload=function(){lablec_meretez()}
 document.addEventListener("DOMContentLoaded", function() {
     sutiell();
 });
-// Ellenőrzi, hogy a sütik elfogadása megtörtént-e
-function sutiell(){
-if (localStorage.getItem('suti_elfogad') === "0") {
-    document.getElementById('cookie-banner').style.display = 'none';
-    document.getElementById("sutik").style.display = 'none';
-} else {
-    document.getElementById('cookie-banner').style.display = 'block';
-    window.parent.postMessage("sutik_elrejt", "*"); //üzenet a fő oldalnak
-    document.getElementById("sutik").style.display = 'block';
-    document.getElementById("sutik").style.zIndex = '300'
-}
+
+function sutiell() { // Ez az iframen belül fut
+    if (sessionStorage.getItem('suti_elfogad') === "1") { 
+        document.getElementById('cookie-banner').style.display = 'none';
+        window.parent.postMessage("sutik_eltun", "*");
+    } else {
+        document.getElementById('cookie-banner').style.display = 'block';
+        window.parent.postMessage("sutik_megjelen", "*");
+    }
+    window.parent.postMessage("sutik_elle", "*"); // Üzenet küldése a főoldalnak
 }
 
-window.addEventListener("message", function(event) {//fő oldal fogadja az üzenetet
-    if (event.data === "sutik_elrejt") {
-        console.log("Sütik elrejtése...");
-        let cookieBanner = document.getElementById("cookie-banner");
-        if (cookieBanner) {
-            cookieBanner.style.display = "none";
-        }
+document.addEventListener("DOMContentLoaded", function () {
+    if (sessionStorage.getItem('suti_elfogad') === "1") { 
+        document.getElementById("sutik").style.display = "none";
+    } else {
+        document.getElementById("sutik").style.display = "block";
+    }
+});
+// Főoldalon fogadjuk az üzenetet
+window.addEventListener("message", function(event) {
+    if (event.data === "sutik_eltun") {
+        document.getElementById("sutik").style.display = "none"
+         sessionStorage.setItem('suti_elfogad', "1");//megynyitáskor/bezáráskor törlődik
+         //localStorage.setItem('suti_elfogad', "1"); SOHA sem törlődik
+    }
+    if (event.data === "sutik_megjelen") {
+        document.getElementById("sutik").style.display = "block"
+    }
+    if (event.data === "sutik_bezar") {
+        document.getElementById("sutik").style.display = "none"
     }
 });
 
 
-document.getElementById('sutik').addEventListener('load', function() {
+/*document.getElementById('sutik').addEventListener('load', function() {
     let iframeDoc = document.getElementById('sutik').contentDocument;
 
     if (!iframeDoc) {
@@ -65,14 +76,20 @@ document.getElementById('sutik').addEventListener('load', function() {
     });
 
     observer.observe(iframeDoc.body, { childList: true, subtree: true });
-});
+});*/
 
-function suti_elog(){
+function suti_elfog(){
     // Sütik elfogadása
-    localStorage.setItem('suti_elfogad', "1");
+     sessionStorage.setItem('suti_elfogad', "1");
     document.getElementById('cookie-banner').style.display = 'none';
-    document.getElementById('sutik').style.display = 'none';
+    sutiell()
+    //document.getElementById('sutik').style.display = 'none';
 };
+function suti_bezar(){
+    document.getElementById("cookie-banner").style.display = "none"
+    window.parent.postMessage("sutik_bezar", "*");
+
+}
 
 
 function fejlec_meretez() {
@@ -89,7 +106,7 @@ function fejlec_meretez() {
         }, 100);
     }
 }
-let lastScrollTop = 0; // Keep track of last scroll position
+let lastScrollTop = 0;
 const navbar = document.getElementById("fejlec");
 
 window.addEventListener("scroll", function() {
@@ -182,26 +199,4 @@ window.addEventListener('resize', function() {
     });
 
     
-});
-
-
-  /*const eredetiUrl = window.location.pathname; // Eredeti URL mentése 
-  document.addEventListener("DOMContentLoaded", function () {
-    if (window.location.pathname.endsWith(".html")) {
-      const newUrl = window.location.pathname.replace(/\.html$/, "");
-      window.history.replaceState({}, "", newUrl);
-    }
-  });
-  window.addEventListener("beforeunload", function () {
-    //window.history.replaceState(null, "", eredetiUrl);
-    //window.history.replaceState({}, "", newUrl&".html");
-  });
-  
-/*document.querySelectorAll("iframe").forEach(iframe => {
-    iframe.addEventListener("load", () => {
-        sleep(2000);
-        location.reload(); // Az egész oldal újratöltése
-        lablec_meretez()
-        fejlec_meretez()
-    });
 });*/
