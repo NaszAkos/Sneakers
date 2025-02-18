@@ -32,7 +32,7 @@ h3{
 .Cipo{
     width: 250px;
     margin-right: 200px;
-    
+
 }
 a{
     color: black;
@@ -49,7 +49,7 @@ a{
 }
 .valasztasok>div:hover{
     transition: all 0.3s;
-    background-color: #f3f3f3;
+    background-color: #f3f3f3;   
 }
 
 .valasztasok>div img{
@@ -66,5 +66,29 @@ a{
 @media screen and (min-width: 768px){
     .tel_valaszto{
         display: none;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .sz1{
+        font-size: 42px;
+    }
+}
+
+@media screen and (max-width: 1083px){
+    .sz1{
+       font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1036px){
+    .sz1{
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 988px){
+    .sz1{
+        font-size: 36px;
     }
 }
