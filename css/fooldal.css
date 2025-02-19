@@ -71,24 +71,15 @@ a{
 
 @media screen and (max-width: 1200px){
     .sz1{
-        font-size: 42px;
+        font-size: 245%;
+      }
+    .valasztasok{
+        
     }
 }
 
-@media screen and (max-width: 1083px){
+@media screen and (max-width: 992px){
     .sz1{
-       font-size: 40px;
-    }
-}
-
-@media screen and (max-width: 1036px){
-    .sz1{
-        font-size: 38px;
-    }
-}
-
-@media screen and (max-width: 988px){
-    .sz1{
-        font-size: 36px;
+        font-size: 215%;
     }
 }
