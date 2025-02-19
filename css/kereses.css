@@ -57,7 +57,15 @@
     display: none;
     color: #3a3a3a; 
 }
+#nincs_ker{
+    display: none;
+    color: #3a3a3a; 
+}
 #nincs_tal>img{
+    width: 300px;
+    margin-left: 20%;
+}
+#nincs_ker>img{
     width: 300px;
     margin-left: 20%;
 }

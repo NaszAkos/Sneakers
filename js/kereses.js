@@ -16,6 +16,7 @@ function keres() {
   
     // Ha az input üres, akkor minden elem rejtve marad
     if (filter === "") {
+      document.getElementById("nincs_ker").style.display = "block";
       for (let i = 0; i < li.length; i++) {
         li[i].style.display = "none";
         document.getElementById("hr1").style.display = "none";
@@ -37,12 +38,14 @@ function keres() {
     }
     if (tal>0){
       document.getElementById("hr1").style.display = "block";
+      document.getElementById("nincs_ker").style.display = "none";
     } else {
       document.getElementById("hr1").style.display = "none";
     }
   var hr1 = document.getElementById("hr1");
     if (hr1.style.display === "none" && filter !== "" && tal===0) {
       document.getElementById("nincs_tal").style.display = "block";
+      document.getElementById("nincs_ker").style.display = "none";
     } else {
       document.getElementById("nincs_tal").style.display = "none";
     }
