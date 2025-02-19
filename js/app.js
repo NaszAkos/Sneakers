@@ -62,24 +62,12 @@ window.addEventListener("message", function(event) {
     if (event.data === "sutik_bezar") {
         document.getElementById("sutik").style.display = "none"
     }
-});
-
-
-/*document.getElementById('sutik').addEventListener('load', function() {
-    let iframeDoc = document.getElementById('sutik').contentDocument;
-
-    if (!iframeDoc) {
-        console.error("Nem lehet hozzáférni az iframe dokumentumához!");
-        return;
+    if (event.data === "mod_valt") {
+        mod_valt()
     }
 
-    let observer = new MutationObserver(function(mutationsList) {
-        console.log("Változás történt az iframe-ben!");
-        sutiell()
-    });
+});
 
-    observer.observe(iframeDoc.body, { childList: true, subtree: true });
-});*/
 
 function suti_elfog(){
     // Sütik elfogadása
@@ -112,23 +100,7 @@ function fejlec_meretez() {
 }
 
 function sutik_meretez() {
-    /*let suti = document.getElementById("sutik");
-
-    if (suti.contentWindow && suti.contentDocument) {
-        setTimeout(() => {
-            const magas = suti.contentDocument.getElementById("mind");
-
-            // Ellenőrizzük, hogy a 'mind' elem létezik-e
-            if (magas) {
-                // Frissítjük az iframe magasságát a 'mind' elem alapján
-                suti.style.height = magas.offsetHeight + "px";
-            } else {
-                console.warn("A 'mind' elem nem található az iframe-ben.");
-            }
-        }, 100);
-    } else {
-        console.error("Az iframe tartalma nem érhető el.");
-    }*/
+    
 }
 
 
@@ -203,27 +175,67 @@ function lablec_meretez(){
     }
 }
 window.addEventListener('resize', function() {
-    fejlec_meretez()
-    lablec_meretez()
-    sutik_meretez()
-  });
+    // Ellenőrizzük, hogy a szükséges elem és mód már létezik-e
+    let modDiv = document.getElementById("mod");
+    let currentMode = localStorage.getItem("vil/sot_mod");
+
+    // A funkciókat meghívjuk, hogy alkalmazkodjanak a méretezéshez
+    fejlec_meretez();
+    lablec_meretez();
+});
 
 
-/*document.addEventListener("DOMContentLoaded", function () {
-    let currentPage = window.location.pathname; // Az aktuális oldal útvonala
-    let elem = document.getElementById("fejlec");
+function mod_valt_nyom(){
+    window.parent.postMessage("mod_valt", "*");
+    let currentMode = localStorage.getItem("vil/sot_mod");
 
-    window.addEventListener("scroll", function () {
-        if (window.scrollY > 50) { 
-            if (currentPage === "/" && !currentPage.includes("fooldal.html")) {
-                elem.style.borderBottom = "1px solid black"; 
-            } else {
-                elem.style.borderBottom = "none";
+    if (currentMode === "1") { // Sötét mód
+        document.getElementById("vilagosModKep").style.display="none"
+        document.getElementById("sotetModKep").style.display="block"
+    } else { // Világos mód
+        document.getElementById("vilagosModKep").style.display="block"
+        document.getElementById("sotetModKep").style.display="none"
+    }
+}
+function mod_ell() {
+    let currentMode = localStorage.getItem("vil/sot_mod");
+
+    if (currentMode === "1") { // Sötét mód
+        document.documentElement.style.filter = "invert(1)";
+
+        document.querySelectorAll("img, video, [id*='gomb']").forEach(el => {
+            if (!el.classList.contains("mod_valtas")) {
+                el.style.filter = "invert(1)";
+            }  else {
+                el.style.filter = "none"; // Kivételként meghagyjuk az eredeti állapotát
             }
-        } else {
-            elem.style.borderBottom = "none"; 
-        }
-    });
+            
+        });
 
-    
-});*/
+    } else { // Világos mód
+        document.documentElement.style.filter = "none";
+
+        document.querySelectorAll("img, video, [id*='gomb']").forEach(el => {
+            el.style.filter = "none";
+        });
+    }
+}
+
+function mod_valt() {
+    let currentMode = localStorage.getItem("vil/sot_mod");
+
+    if (currentMode === "1") {
+        localStorage.setItem("vil/sot_mod", "0"); // Világos mód
+    } else {
+        localStorage.setItem("vil/sot_mod", "1"); // Sötét mód
+    }
+    mod_ell();
+    //location.reload()
+}
+
+function ikonEltunt(){
+    window.parent.postMessage("modvaltas", "*");
+}
+window.onload = function() {
+    mod_ell()
+};

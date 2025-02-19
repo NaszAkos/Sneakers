@@ -53,6 +53,14 @@ body{
 .kosar_>img{
     width: 90px;
 }
+#mod{
+    float: right;
+    margin-top: 13px;
+    margin-right: 10px;
+}
+#mod img{
+    height: 30px;
+}
 @media screen and (max-width: 802px){
     .logo{
         width: 50px;
