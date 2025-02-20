@@ -61,11 +61,7 @@
     display: none;
     color: #3a3a3a; 
 }
-#nincs_tal>img{
-    width: 300px;
-    margin-left: 20%;
-}
-#nincs_ker>img{
+#nincs_tal>img, #nincs_ker>img{
     width: 300px;
     margin-left: 20%;
 }
@@ -83,6 +79,10 @@
     }
     .kereses input{
         width: 88%;
+    }
+    #nincs_tal>img, #nincs_ker>img{
+        width: 300px;
+        margin-left: 2%;
     }
 }
 

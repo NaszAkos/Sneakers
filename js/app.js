@@ -215,6 +215,7 @@ function mod_ell() {
 
     } else { // Világos mód
         document.documentElement.style.filter = "none";
+        document.getElementById("sutik").style.filter = "none";
 
         document.querySelectorAll("img, video, [id*='gomb'], [id*='fizetes']").forEach(el => {
             el.style.filter = "none";

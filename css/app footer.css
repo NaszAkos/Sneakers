@@ -38,3 +38,8 @@ a{
     text-decoration: none;
     color: black;
 }
+@media screen and (max-width: 767px){
+    .col-xxl-4{
+        margin-bottom: 40px;
+    }
+}

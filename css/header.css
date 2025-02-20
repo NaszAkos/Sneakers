@@ -14,6 +14,7 @@ body{
     width: 80px;
     margin-top: 10px;
     cursor: pointer;
+    position: relative;
 }
 
 
@@ -61,7 +62,8 @@ body{
 #mod img{
     height: 30px;
 }
-@media screen and (max-width: 802px){
+
+@media screen and (max-width: 873px){
     .logo{
         width: 50px;
     }
@@ -84,9 +86,15 @@ body{
     .kosar_ img{
         width: 70px;
     }
+    #mod img{
+        height: 25px;
+    }
+    #mod{
+        margin-top: 10px;
+    }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 531px){
     .logo{
         width: 35px;
     }
@@ -110,5 +118,46 @@ body{
     .kosar_ img{
         margin-top: 3px;
         width: 50px;
+    }
+    #mod img{
+        height: 20px;
+    }
+    #mod{
+        margin-top: 8px;
+        margin-right: 7px;
+    }
+}
+@media screen and (max-width: 390px){
+    .logo{
+        width: 35px;
+        display: none;
+    }
+    .kereses input{
+        display: none;
+    }
+    .kereses{
+        width: 30px;
+        height: 25px;
+        border-radius: 12,5px;
+        margin-top: 5px;
+    }
+    .kereses img{
+        width: 30px;
+        margin-left: 0px;
+        margin-top: -10px;
+    }
+    .sneakerz{
+        width: 100px;
+    }
+    .kosar_ img{
+        margin-top: 3px;
+        width: 50px;
+    }
+    #mod img{
+        height: 20px;
+    }
+    #mod{
+        margin-top: 8px;
+        margin-right: 7px;
     }
 }
