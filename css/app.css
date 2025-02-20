@@ -34,7 +34,7 @@ iframe{
     left: 0;
     opacity: 97%;
     height: 100vh;
-    z-index: 29;
+    z-index: 31;
 }
 #fejlec{
     height: 60px;/* VIGYÁZAT!!! ez csak akkor jó ha a fejléc mérete ennél sose nagyobb*/

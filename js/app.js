@@ -202,20 +202,21 @@ function mod_ell() {
 
     if (currentMode === "1") { // Sötét mód
         document.documentElement.style.filter = "invert(1)";
+        document.getElementById("sutik").style.filter = "invert(1)";
 
-        document.querySelectorAll("img, video, [id*='gomb']").forEach(el => {
+        document.querySelectorAll("img, video, [id*='gomb'], [id*='fizetes']").forEach(el => {
             if (!el.classList.contains("mod_valtas")) {
                 el.style.filter = "invert(1)";
-            }  else {
+            } else {
                 el.style.filter = "none"; // Kivételként meghagyjuk az eredeti állapotát
             }
-            
         });
+        
 
     } else { // Világos mód
         document.documentElement.style.filter = "none";
 
-        document.querySelectorAll("img, video, [id*='gomb']").forEach(el => {
+        document.querySelectorAll("img, video, [id*='gomb'], [id*='fizetes']").forEach(el => {
             el.style.filter = "none";
         });
     }
