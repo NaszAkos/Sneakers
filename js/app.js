@@ -1,23 +1,3 @@
-/*document.addEventListener("DOMContentLoaded", function() {
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", "sütik.html", true);
-    
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            document.getElementById("fejlec_tak").insertAdjacentHTML("beforeend", xhr.responseText);
-            document.getElementById("fejlec_tak").style.display = "block"
-        }
-    };
-
-    xhr.send();
-});*/
-
-
-/*document.querySelectorAll("a").forEach(link => {
-    link.style.textDecoration = "none";
-});*/
-
-//localStorage.clear();
 let fejlec_meret = 0
 document.getElementById('fejlec').onload=function(){fejlec_meretez()}
 document.getElementById('sutik').onload=function(){sutik_meretez()}
@@ -42,15 +22,14 @@ function sutiell() { // Ez az iframen belül fut
     window.parent.postMessage("sutik_elle", "*"); // Üzenet küldése a főoldalnak
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {//sütik ellenőrzés indításokr
     if (sessionStorage.getItem('suti_elfogad') === "1") { 
         document.getElementById("sutik").style.display = "none";
     } else {
         document.getElementById("sutik").style.display = "block";
     }
 });
-// Főoldalon fogadjuk az üzenetet
-window.addEventListener("message", function(event) {
+window.addEventListener("message", function(event) {// Főoldal üzenet fogadás
     if (event.data === "sutik_eltun") {
         document.getElementById("sutik").style.display = "none"
          sessionStorage.setItem('suti_elfogad', "1");//megynyitáskor/bezáráskor törlődik
@@ -70,7 +49,6 @@ window.addEventListener("message", function(event) {
 
 
 function suti_elfog(){
-    // Sütik elfogadása
      sessionStorage.setItem('suti_elfogad', "1");
     document.getElementById('cookie-banner').style.display = 'none';
     sutiell()
@@ -107,25 +85,20 @@ function sutik_meretez() {
 let lastScrollTop = 0;
 const navbar = document.getElementById("fejlec");
 
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function() {//görgrtésellenőrzés, fejléc animáció
+    navbar.style.transition = `top ${fejlec_meret/200}s ease-in-out, box-shadow ${fejlec_meret/200}s ease-in-out`;
     let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
     if (currentScroll > lastScrollTop) {
-        navbar.style.top = "-60px";
-        //navbar.style.borderBottom = "1px solid black"
-        if (currentScroll > 60) {
-            //navbar.style.borderBottom = "1px solid black"
-            //navbar.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)"
-        } else {
-            navbar.style.borderBottom = "none"
+        navbar.style.top = -fejlec_meret + "px";
+        if (currentScroll > fejlec_meret) {
             navbar.style.boxShadow = "none"
+        } else {
+            navbar.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)"
         }
-        
     } else {
         navbar.style.top = "0";
-        //navbar.style.borderBottom = "none"
         if (currentScroll > 0) {
-            //navbar.style.borderBottom = "1px solid black"
             navbar.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)"
             
         } else {
@@ -134,7 +107,7 @@ window.addEventListener("scroll", function() {
         }
     }
     if (window.location.href.includes("/kereses")) {
-        if (currentScroll > lastScrollTop) {//2
+        if (currentScroll > lastScrollTop) {//2 keresés mező
             if (window.location.href.includes("kereses")) {
                 document.getElementById("keresest").style.top = "3px";
                 document.getElementById("keresest").style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)"
@@ -174,18 +147,13 @@ function lablec_meretez(){
         }, 100);
     }
 }
-window.addEventListener('resize', function() {
-    // Ellenőrizzük, hogy a szükséges elem és mód már létezik-e
-    let modDiv = document.getElementById("mod");
-    let currentMode = localStorage.getItem("vil/sot_mod");
-
-    // A funkciókat meghívjuk, hogy alkalmazkodjanak a méretezéshez
+window.addEventListener('resize', function() {//betöltéskor fejléc láblés ell
     fejlec_meretez();
     lablec_meretez();
 });
 
 
-function mod_valt_nyom(){
+function mod_valt_nyom(){//iframen belül fut
     window.parent.postMessage("mod_valt", "*");
     let currentMode = localStorage.getItem("vil/sot_mod");
 
@@ -199,7 +167,6 @@ function mod_valt_nyom(){
 }
 function mod_ell() {
     let currentMode = localStorage.getItem("vil/sot_mod");
-
     if (currentMode === "1") { // Sötét mód
         document.documentElement.style.filter = "invert(1)";
         document.getElementById("sutik").style.filter = "invert(1)";
@@ -208,17 +175,20 @@ function mod_ell() {
             if (!el.classList.contains("mod_valtas")) {
                 el.style.filter = "invert(1)";
             } else {
-                el.style.filter = "none"; // Kivételként meghagyjuk az eredeti állapotát
+                el.style.filter = "none";
             }
         });
         
 
     } else { // Világos mód
         document.documentElement.style.filter = "none";
-        document.getElementById("sutik").style.filter = "none";
+        document.getElementById("sutik").style.filter = "";
 
         document.querySelectorAll("img, video, [id*='gomb'], [id*='fizetes']").forEach(el => {
             el.style.filter = "none";
+        });
+        document.querySelectorAll('html, body, img, video, [id*="gomb"], [id*="fizetes"], [id*="sutik"] ').forEach(el => {
+            el.style.transition = 'none';
         });
     }
 }
@@ -232,10 +202,16 @@ function mod_valt() {
         localStorage.setItem("vil/sot_mod", "1"); // Sötét mód
     }
     mod_ell();
+    document.querySelectorAll('html, body, img, video, [id*="gomb"], [id*="fizetes"], [id*="sutik"] ').forEach(el => {
+        el.style.transition = 'filter 0.4s ease-in-out';
+        setTimeout(function() {
+            el.style.transition = 'none';
+        }, 400);
+    });
     //location.reload()
 }
 
-function ikonEltunt(){
+function ikonEltunt(){//iframen belül fut
     window.parent.postMessage("modvaltas", "*");
 }
 window.onload = function() {

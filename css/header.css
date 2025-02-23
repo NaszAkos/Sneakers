@@ -16,7 +16,13 @@ body{
     cursor: pointer;
     position: relative;
 }
-
+.logo, .sneakerz{
+    transition: all 0.15s;
+}
+.logo:hover, .sneakerz:hover{
+    background-color: #dcdcdc;
+    box-shadow: 0 0 10px 10px rgb(220, 220, 220);
+}
 
 .kereses{
     color: black;
