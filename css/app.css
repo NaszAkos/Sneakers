@@ -42,17 +42,10 @@ iframe{
     left: 0;
     width: 100%;
     position: sticky;
-    top: 0;
-    left: 0;
     z-index: 30;
     display: flex;
-    transition: top 0.3s, opacity 0.3s ease;
-    /*border-bottom: 1px solid black;*/
+    transition: top 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
-/*#fejlec.sticky {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding a bottom shadow when sticky *
-    border-bottom: 1px solid black;
-}*/
 #fejlec.hidden {
     opacity: 0; /* Make it invisible */
     border-bottom: none;
@@ -103,6 +96,11 @@ iframe{
 .cookie-banner p{
     margin-inline: 20px;
 }
+html, body, img, video, [id*='gomb'], [id*='fizetes'], #sutik {
+    transition: none; /*filter 0.4s ease-in-out app.js-ben mod_valt()*/
+}
+
+
 /*
 @media screen and (max-width: 819px){
     #fejlec{

@@ -1,16 +1,16 @@
 szin_ell(nev)
       function kosar(nev){
-        if (localStorage.getItem(nev) === "1") {
-          localStorage.setItem(nev, '0');
+        if (sessionStorage.getItem(nev) === "1") {
+          sessionStorage.setItem(nev, '0');
           szin_ell(nev)
         } else {
-          localStorage.setItem(nev, '1');
+          sessionStorage.setItem(nev, '1');
           window.top.location.href = "../kosár.html";
           szin_ell(nev)
         }
       }
       function szin_ell(nev) {
-      if (localStorage.getItem(nev) === "1") {
+      if (sessionStorage.getItem(nev) === "1") {
           document.getElementById("gomb").innerText = "Törlés a kosárból"
           document.getElementById("gomb").style.backgroundColor = "#c62d2d"
           document.getElementById("gomb").style.height="120px"

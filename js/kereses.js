@@ -1,9 +1,12 @@
 document.getElementById('fejlec').onload=function(){
-  const iframe = document.getElementById('fejlec');
+  ikonEltunt()
+}
+function ikonEltunt(){
+  /*const iframe = document.getElementById('fejlec');
   const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
   const element = iframeDocument.getElementById('keresesikon');
-  element.style.display = 'none';
-}  
+  element.style.display = 'none';*/
+}
 document.getElementById("kereses_inp").value = localStorage.getItem("kereses_szoveg") || ""; // Betöltés
 keres()
 function keres() {
@@ -57,7 +60,32 @@ function handleKeyPress(event) {
   }
 }
 
-const iframe = document.getElementById('fejlec');
+/*const iframe = document.getElementById('fejlec');
+const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+const element = iframeDocument.getElementById('keresesikon');
+element.style.display = 'none';*/
+
+window.addEventListener("message", function(event) {
+  if (event.data === "modvaltas") {
+    sleep(100)
+      ikonEltunt()
+      const iframe = document.getElementById('fejlec');
 const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
 const element = iframeDocument.getElementById('keresesikon');
 element.style.display = 'none';
+  }
+});
+const iframe = document.getElementById('fejlec');
+
+// Az iframe betöltődésekor fut le
+iframe.onload = function() {
+  const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+  
+  // Ellenőrizd, hogy az elem létezik-e
+  const element = iframeDocument.getElementById('keresesikon');
+  if (element) {
+    element.style.display = 'none'; // Elrejtjük az elemet
+  } else {
+    console.log('A keresés ikon nem található az iframe-ben');
+  }
+};

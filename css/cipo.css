@@ -1,7 +1,5 @@
 body{
-    width: 100%;
-    overflow-x: hidden;
-    width: 99.8%;
+    /*overflow-x: hidden;*/
     width: 100%;
 }
 iframe{
@@ -120,53 +118,25 @@ img{
 #closeButton img:hover{
     background-color: #cecece;
 }
-/*@media screen and (min-width: 1900px){
-    .kepek{
-        height: 700px;
-    }
-}
-@media screen and (max-width: 1899px){
-    .kepek{
-        height: 600px;
-    }
-}
-@media screen and (max-width: 1400px){
-    .kepek{
-        height: 500px;
-    }
-}
-@media screen and (max-width: 1100px){
-    .kepek{
-        height: 400px;
-    }
-}
-@media screen and (max-width: 776px){
-    .kepek{
-        height: 300px;
-    }
-}
-@media screen and (min-width: 767px){
-    .kepek{
-        height: 100%;
-    }
-}*/
 @media screen and (max-width: 768px){
     .meretek{
         margin-top: 15%;
     }
 }
 @media screen and (max-width: 767px){
-    .kosarba>.gomb{
-        margin-top: 3%;
+    .kosarba{
+        display: flex;
+        justify-content: center;
+    }
+    .kosarba>#gomb{
+        margin-inline: 0;
+        margin-top: 10%;
+    }
+    .szin_kep{
+        margin-left: auto;
+        margin-bottom: 0px;
+    }
+    .szin_kep .col-6{
+        margin-bottom: 0px ;
     }
 }
-/*@media screen and (max-width: 767px){
-    body{
-        width: 99%;
-    }
-}
-@media screen and (min-width: 1200px){
-    body{
-        width: 99%;
-    }
-}*/

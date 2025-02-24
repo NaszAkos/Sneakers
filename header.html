@@ -16,6 +16,7 @@
             <img class="logo" onclick="konrk_keres('Adidas')" src="img/logo/adidas fekete logo.png" alt="">
             <a href="kosár.html" target="_parent" id="kosrikon" class="kosar_"><img src="img/cipők/főoldal/kosar.png" alt=""></a>
             <div class="kereses" id="keresesikon"><a href="" onclick="keres()"><img src="img/cipők/főoldal/kereses.png" alt=""></a><input id="kereses_inp" placeholder="Keresés" onkeypress="handleKeyPress(event)"></input></div>
+            <a href="" id="mod" onclick="mod_valt_nyom();ikonEltunt();window.parent.postMessage('modvaltas','*');"><img id="vilagosModKep" src="img/cipők/főoldal/világos mód.png" alt=""><img id="sotetModKep" src="img/cipők/főoldal/sötét mód.png" alt=""></a>
             
             
     </div>
@@ -33,6 +34,24 @@
             localStorage.setItem("kereses_szoveg", keres);
             window.top.location.href = "kereses.html";
         }
+        window.onload = function() {
+    let currentMode = localStorage.getItem("vil/sot_mod");
+    if (currentMode === "1") { // Sötét mód
+        document.getElementById("vilagosModKep").style.display="none"
+        document.getElementById("sotetModKep").style.display="block"
+    } else { // Világos mód
+        document.getElementById("sotetModKep").style.display="none"
+        document.getElementById("vilagosModKep").style.display="block"
+    }
+
+};
+/*function ikonEltunt(){
+    window.parent.postMessage("modvaltas", "*");
+        if (window.location.href.includes("/kereses")) {
+        document.getElementById("keresesikon").style.display="none"
+        }
+    }*/
+
         //sleep(1);
         //window.location.reload()
     </script>
