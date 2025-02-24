@@ -81,6 +81,14 @@ a{
 
 @media screen and (max-width: 992px){
     .sz1{
-        font-size: 215%;
+        font-size: 200%;
+    }
+}
+
+@media screen and (max-width: 765px){
+
+
+    .nepszeru img{
+        width: 70%;
     }
 }
