@@ -41,6 +41,54 @@ a{
 h6{
     text-align: center;
 }
+.custom-accordion {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.custom-accordion-item {
+}
+.custom-accordion-header {
+    color: black;
+    padding: 15px;
+    font-weight: bold;
+}
+.custom-accordion-content {
+    padding: 15px;
+}
+.custom-accordion-content.active {
+    padding: 15px;
+}
+.arrow {
+    display: none;
+    transition: transform 0.3s ease;
+}
+@media (max-width: 767px) {
+    .custom-accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        padding: 0 15px;
+    }
+    .custom-accordion-content.active {
+        padding: 15px;
+    }
+    .custom-accordion-header {
+        cursor: pointer;
+    }
+    .arrow {
+        display: inline-block;
+    }
+}
+.custom-accordion-header .arrow {
+    transition: transform 0.3s ease; /* Animáció a nyíl forgatásához */
+}
+
+.custom-accordion-content.active + .custom-accordion-header .arrow {
+    transform: rotate(180deg); /* Nyíl forgatása 180 fokkal, amikor a tartalom aktív */
+}
+
 @media screen and (max-width: 767px){
     .col-xxl-4{
         margin-bottom: 40px;

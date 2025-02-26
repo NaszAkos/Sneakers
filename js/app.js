@@ -45,10 +45,13 @@ window.addEventListener("message", function(event) {// Főoldal üzenet fogadás
         mod_valt()
     }
     if (event.data === "footer_meretez") {
-        lablec_meretez()
+        setTimeout(function() {lablec_meretez()}, 0);
+        setTimeout(function() {lablec_meretez()}, 300);
+        
     }
 
 });
+
 
 
 function suti_elfog(){
