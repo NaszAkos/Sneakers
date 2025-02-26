@@ -67,6 +67,7 @@ a{
 }
 .ajanlas>a:hover{
     transition: all 0.3s;
+    transform: scale(1.03);
     background-color: #f3f3f3;
     box-shadow: 0 0 4px 4px rgba(64, 64, 64, 0.153);
 }

@@ -44,6 +44,9 @@ window.addEventListener("message", function(event) {// Főoldal üzenet fogadás
     if (event.data === "mod_valt") {
         mod_valt()
     }
+    if (event.data === "footer_meretez") {
+        lablec_meretez()
+    }
 
 });
 
@@ -134,7 +137,6 @@ window.addEventListener("scroll", function() {//görgrtésellenőrzés, fejléc 
     }, 300);
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
-
 function lablec_meretez(){
     iframe = document.getElementById("lablec");
 
