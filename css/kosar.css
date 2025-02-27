@@ -41,6 +41,7 @@
 }
 .ajanlas{
     text-align: center;
+    margin-bottom: 10px;
 }
 .ajanlas_cim{
     text-align: start;
@@ -63,7 +64,7 @@ a{
     align-items: center;
     text-align: center;
     margin-inline: 4%;
-    margin-top: 7px;
+    margin-top: 10px;
 }
 .ajanlas>a:hover{
     transition: all 0.3s;

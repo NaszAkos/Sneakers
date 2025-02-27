@@ -12,6 +12,11 @@ h3{
 }
 .nepszeru img{
     max-width: 100%;
+    transition: all 0.3s;
+}
+.nepszeru img:hover{
+    transition: all 0.3s;
+    transform: scale(1.03);
 }
 .valasztasok{
     margin-inline: 10px;
