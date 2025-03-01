@@ -31,7 +31,7 @@ h3{
 }
 
 .sz1{
-    font-size: 275%;
+    font-size: 290%;
 }
 
 .Cipo{
@@ -65,36 +65,49 @@ a{
     display: block;
     margin: 0 auto;
 }
-@media screen and (max-width: 767px){
-    .tel_valaszto{
-        display: block;
-    }
-}
-@media screen and (min-width: 768px){
-    .tel_valaszto{
-        display: none;
-    }
+
+
+@media screen and (max-width: 1400px){
+    .sz1{
+        font-size: 270%;
+      }
 }
 
 @media screen and (max-width: 1200px){
     .sz1{
-        font-size: 245%;
+        font-size: 250%;
       }
-    .valasztasok{
-        
+}
+
+@media screen and (max-width: 1033px){
+    .sz1{
+        font-size: 239%;
     }
 }
 
 @media screen and (max-width: 992px){
     .sz1{
-        font-size: 200%;
+        font-size: 210%;
     }
 }
 
-@media screen and (max-width: 765px){
+@media screen and (max-width: 888px){
 
+    .sz1{
+        font-size: 179%;
+    }
+}
 
-    .nepszeru img{
-        width: 70%;
+@media screen and (max-width: 768px){
+    
+    .tel_valaszto{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px){
+    
+    .tel_valaszto{
+        display: none;
     }
 }
