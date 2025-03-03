@@ -9,13 +9,15 @@ h3{
     background-color: #E4E3E3;
     width: 100%;
     max-width: 100%;
+    transition: all 0.3ss;
 }
 .nepszeru img{
     max-width: 100%;
+}
+.nepszeruKep{
     transition: all 0.3s;
 }
-.nepszeru img:hover{
-    transition: all 0.3s;
+.nepszeruKep:hover{
     transform: scale(1.03);
 }
 .valasztasok{
