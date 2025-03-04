@@ -76,13 +76,22 @@ function fejlec_meretez() {
             if (header) {
                 iframe.style.height = header.offsetHeight + "px";
                 fejlec_meret = header.offsetHeight
-                //document.getElementById("fejlec_tak").style.display = "block"
-                //document.getElementById("fejlec_tak").style.height = header.offsetHeight + "px";
             }
         }, 100);
     }
 }
+function lablec_meretez(){
+    footer = document.getElementById("lablec");
 
+    if (footer.contentWindow && footer.contentDocument) {
+        setTimeout(() => {
+            const header = footer.contentDocument.getElementById("mind");
+            if (header) {
+                footer.style.height = header.offsetHeight + "px";
+            }
+        }, 100);
+    }
+}
 function sutik_meretez() {
     
 }
@@ -140,18 +149,6 @@ window.addEventListener("scroll", function() {//görgrtésellenőrzés, fejléc 
     }, 300);
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
-function lablec_meretez(){
-    iframe = document.getElementById("lablec");
-
-    if (iframe.contentWindow && iframe.contentDocument) {
-        setTimeout(() => {
-            const header = iframe.contentDocument.getElementById("mind");
-            if (header) {
-                iframe.style.height = header.offsetHeight + "px";
-            }
-        }, 100);
-    }
-}
 window.addEventListener('resize', function() {//betöltéskor fejléc láblés ell
     fejlec_meretez();
     lablec_meretez();
