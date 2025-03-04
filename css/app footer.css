@@ -47,7 +47,12 @@ h6{
     border-radius: 5px;
     overflow: hidden;
 }
-.custom-accordion-item {
+.custom-accordion-item:hover{
+    transform: scale(1.07);
+    
+}
+.custom-accordion-item{
+    transition: all 0.3s;
 }
 .custom-accordion-header {
     color: black;
