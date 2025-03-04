@@ -7,10 +7,16 @@ function ikonEltunt(){
   const element = iframeDocument.getElementById('keresesikon');
   element.style.display = 'none';*/
 }
-document.getElementById("kereses_inp").value = localStorage.getItem("kereses_szoveg") || ""; // Betöltés
+document.getElementById("kereses_inp").value = sessionStorage.getItem("kereses_szoveg") || ""; // Betöltés
 keres()
 function keres() {
-    localStorage.setItem("kereses_szoveg", document.getElementById("kereses_inp").value); // Mentés
+    sessionStorage.setItem("kereses_szoveg", document.getElementById("kereses_inp").value); // Mentés
+    if (sessionStorage.getItem("kereses_szoveg")===""||sessionStorage.getItem("kereses_szoveg")===0){
+      document.title = "Keresés";
+    } else {
+      document.title = "Találatok: " + sessionStorage.getItem("kereses_szoveg");
+    }
+    
     var input = document.getElementById("kereses_inp");
     var filter = input.value.toUpperCase();
     var ul = document.getElementById("talalatok");

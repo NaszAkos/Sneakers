@@ -27,11 +27,11 @@
             }
         }
         function keres(){
-            localStorage.setItem("kereses_szoveg", document.getElementById("kereses_inp").value); // Szöveg mentése
+            sessionStorage.setItem("kereses_szoveg", document.getElementById("kereses_inp").value); // Szöveg mentése
             window.top.location.href = "kereses.html"; // Átirányítás a másik oldalra
         }
         function konrk_keres(keres){
-            localStorage.setItem("kereses_szoveg", keres);
+            sessionStorage.setItem("kereses_szoveg", keres);
             window.top.location.href = "kereses.html";
         }
         window.onload = function() {
