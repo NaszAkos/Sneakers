@@ -33,7 +33,7 @@ h3{
 }
 
 .sz1{
-    font-size: 290%;
+    font-size: 200%;
 }
 
 .Cipo{
@@ -100,16 +100,34 @@ a{
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     
     .tel_valaszto{
         display: block;
+    }
+    .nepszeru{
+        height: 500px;
+    }
+    .nepszeru img{
+        width: 440px;
+    }
+    .sort{
+        display: none;
+    }
+    .sz1{
+        text-align: center;
+    }
+    .sz3{
+        margin-top: 25px;
     }
 }
 
 @media screen and (min-width: 768px){
     
     .tel_valaszto{
+        display: none;
+    }
+    .vonal1{
         display: none;
     }
 }
