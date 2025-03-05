@@ -100,13 +100,12 @@ a{
     }
 }
 
-@media screen and (max-width: 767px){
-    
-    .tel_valaszto{
-        display: block;
-    }
+@media screen and (max-width: 767.91px){
     .nepszeru{
         height: 500px;
+    }
+    .tel_valaszto{
+        display: block;
     }
     .nepszeru img{
         width: 440px;
@@ -122,7 +121,7 @@ a{
     }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 767.9px){
     
     .tel_valaszto{
         display: none;
