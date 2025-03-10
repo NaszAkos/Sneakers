@@ -69,9 +69,9 @@ a{
 }
 
 
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1440px){
     .sz1{
-        font-size: 270%;
+        font-size: 280%;
       }
 }
 
@@ -130,3 +130,32 @@ a{
         display: none;
     }
 }
+
+@media screen and (max-width: 465px){
+    .nepszeru{
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 437px){
+    .sz1{
+        font-size: 160%;
+    }
+
+}
+
+@media screen and (max-width: 350px){
+    .sz3{
+        font-size: 145%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .sz1{
+        font-size: 150%;
+    }
+    .sz3{
+        font-size: 140%;
+    }
+}
+    

@@ -148,7 +148,7 @@ body{
         margin-right: 7px;
     }
 }
-@media screen and (max-width: 390px){
+@media screen and (max-width: 393px){
     .logo{
         width: 35px;
         display: none;
