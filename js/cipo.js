@@ -1,11 +1,11 @@
-var meret = 0
+let meret = null; // Kezdetben nincs értéke
 szin_ell(nev)
       function kosar(nev){
         if (sessionStorage.getItem(nev) === "1") {
           sessionStorage.setItem(nev, '0');
           szin_ell(nev)
         } else {
-          if (meret_allit!=0){
+          if (meret_allit===0 && meret_allit==="null"){
             sessionStorage.setItem(nev, '1');
             window.top.location.href = "../kosár.html";
           }
@@ -18,13 +18,17 @@ szin_ell(nev)
           document.getElementById("gomb").style.backgroundColor = "#c62d2d"
           document.getElementById("gomb").style.height="120px"
       } else {
-        document.getElementById("gomb").innerText = "Kosárba"
-        document.getElementById("gomb").style.backgroundColor = "#15ff00"
-        document.getElementById("gomb").style.height="70px"
+        if (meret_allit !== 0 && meret_allit !== "null"){
+          document.getElementById("gomb").style.backgroundColor = "#868686"
+          document.getElementById("gomb").innerText = "Kosárba"
+          document.getElementById("gomb").style.height="70px"
+        } else {
+          document.getElementById("gomb").innerText = "Kosárba"
+          document.getElementById("gomb").style.backgroundColor = "#15ff00"
+          document.getElementById("gomb").style.height="70px"
+        }
       }
-      if (meret_allit === 0){
-        document.getElementById("gomb").style.backgroundColor = "#868686"
-      }
+      
     }
 
     function kepkatt(){
@@ -69,6 +73,8 @@ szin_ell(nev)
   }
 function meret_allit(id){
   szin_ell(nev)
+  meret = parseInt(id.split("_")[1]); // Méretet beállítja
+  console.log("Kiválasztott méret:", meret);
   document.querySelectorAll('.meretek>div').forEach(el => {
     el.style.backgroundColor = "";
 });
