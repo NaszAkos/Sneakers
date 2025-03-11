@@ -68,6 +68,24 @@ a{
     margin: 0 auto;
 }
 
+@media screen and (max-width: 1920px){
+    .sz1{
+        font-size: 420%;
+      }
+}
+
+@media screen and (max-width: 1662px){
+    .sz1{
+        font-size: 380%;
+      }
+}
+
+@media screen and (max-width: 1511px){
+    .sz1{
+        font-size: 360%;
+      }
+}
+
 
 @media screen and (max-width: 1440px){
     .sz1{
