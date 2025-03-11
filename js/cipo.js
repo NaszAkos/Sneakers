@@ -1,15 +1,18 @@
+var meret = 0
 szin_ell(nev)
       function kosar(nev){
         if (sessionStorage.getItem(nev) === "1") {
           sessionStorage.setItem(nev, '0');
           szin_ell(nev)
         } else {
-          sessionStorage.setItem(nev, '1');
-          window.top.location.href = "../kosár.html";
+          if (meret_allit!=0){
+            sessionStorage.setItem(nev, '1');
+            window.top.location.href = "../kosár.html";
+          }
           szin_ell(nev)
         }
       }
-      function szin_ell(nev) {
+    function szin_ell(nev) {
       if (sessionStorage.getItem(nev) === "1") {
           document.getElementById("gomb").innerText = "Törlés a kosárból"
           document.getElementById("gomb").style.backgroundColor = "#c62d2d"
@@ -18,7 +21,11 @@ szin_ell(nev)
         document.getElementById("gomb").innerText = "Kosárba"
         document.getElementById("gomb").style.backgroundColor = "#15ff00"
         document.getElementById("gomb").style.height="70px"
-      }}
+      }
+      if (meret_allit === 0){
+        document.getElementById("gomb").style.backgroundColor = "#868686"
+      }
+    }
 
     function kepkatt(){
       // Az összes olyan elem, aminek class attribútuma "szoveg" vagy "also"
@@ -60,3 +67,10 @@ szin_ell(nev)
     closeButton.style.display = 'none';
     document.getElementById('fejlec_tak').style.display = 'none'
   }
+function meret_allit(id){
+  szin_ell(nev)
+  document.querySelectorAll('.meretek>div').forEach(el => {
+    el.style.backgroundColor = "";
+});
+  document.getElementById(id).style.backgroundColor = "#a1a1a1"
+}
