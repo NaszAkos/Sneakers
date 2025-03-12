@@ -1,37 +1,53 @@
-let meret = null; // Kezdetben nincs értéke
-szin_ell(nev)
-      function kosar(nev){
-        if (sessionStorage.getItem(nev) === "1") {
-          sessionStorage.setItem(nev, '0');
-          szin_ell(nev)
-        } else {
-          if (meret_allit===0 && meret_allit==="null"){
-            sessionStorage.setItem(nev, '1');
-            window.top.location.href = "../kosár.html";
-          }
-          szin_ell(nev)
-        }
-      }
-    function szin_ell(nev) {
-      if (sessionStorage.getItem(nev) === "1") {
-          document.getElementById("gomb").innerText = "Törlés a kosárból"
-          document.getElementById("gomb").style.backgroundColor = "#c62d2d"
-          document.getElementById("gomb").style.height="120px"
-      } else {
-        if (meret_allit !== 0 && meret_allit !== "null"){
-          document.getElementById("gomb").style.backgroundColor = "#868686"
-          document.getElementById("gomb").innerText = "Kosárba"
-          document.getElementById("gomb").style.height="70px"
-        } else {
-          document.getElementById("gomb").innerText = "Kosárba"
-          document.getElementById("gomb").style.backgroundColor = "#15ff00"
-          document.getElementById("gomb").style.height="70px"
-        }
-      }
-      
-    }
+let meret = sessionStorage.getItem(nev) !== null ? sessionStorage.getItem(nev) : 0;
+if (meret !== "0" && meret !== 0) {
+  meret_allit("meret_" + meret);
+}
 
-    function kepkatt(){
+//console.log(meret)
+function kosar(nev) {
+  if (sessionStorage.getItem(nev) === "0" || sessionStorage.getItem(nev) === null) {
+
+    // Csak akkor irányítson át, ha a méret nem 0 vagy null
+    if (meret !== "0" && meret !== null && meret !== 0) {
+        sessionStorage.setItem(nev, meret);
+        window.top.location.href = "../kosár.html";
+    }
+} else {
+    sessionStorage.setItem(nev, 0);
+    document.querySelectorAll('.meretek>div').forEach(el => {
+      el.style.backgroundColor = "";
+    });
+    meret = 0
+    szin_ell(nev);
+    
+  }
+  szin_ell(nev);
+}
+
+function szin_ell(nev) {
+  let gomb = document.getElementById("gomb");
+
+  if (sessionStorage.getItem(nev) !== null && sessionStorage.getItem(nev) !== "0") {
+      gomb.innerText = "Törlés a kosárból";
+      gomb.style.backgroundColor = "#c62d2d"; // Piros gomb
+      gomb.style.height = "120px";
+  } else {
+      gomb.innerText = "Kosárba";
+      gomb.style.height = "70px";
+
+      // Ha a meret 0 vagy null, akkor szürke marad
+      if (meret === "0" || meret === null || meret === 0) {
+          gomb.style.backgroundColor = "#868686"; // Szürke
+      } else {
+          gomb.style.backgroundColor = "#15ff00"; // Zöld
+      }
+  }
+}
+
+// Az oldal betöltésekor frissíti a gomb állapotát
+szin_ell(nev);
+
+function kepkatt(){
       // Az összes olyan elem, aminek class attribútuma "szoveg" vagy "also"
       const elements = document.querySelectorAll('[class*="szoveg"], [class*="also"], [id*="lablec"], [id*="fejlec"], [class*="logo"], [ class*="vonal-vizsz"]');
         elements.forEach(element => {
@@ -72,11 +88,14 @@ szin_ell(nev)
     document.getElementById('fejlec_tak').style.display = 'none'
   }
 function meret_allit(id){
-  szin_ell(nev)
-  meret = parseInt(id.split("_")[1]); // Méretet beállítja
-  console.log("Kiválasztott méret:", meret);
+  meret = parseInt(id.split("_")[1]);
+  //console.log("Kiválasztott méret:", meret);
   document.querySelectorAll('.meretek>div').forEach(el => {
     el.style.backgroundColor = "";
-});
+  });
   document.getElementById(id).style.backgroundColor = "#a1a1a1"
+  szin_ell(nev)
+  if (sessionStorage.getItem(nev) !== null && sessionStorage.getItem(nev) !== "0") {
+    sessionStorage.setItem(nev, meret);
+  }  
 }

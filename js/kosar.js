@@ -10,68 +10,48 @@ sessionStorage.setItem("YB", "1")*/
 tartalom_ell()
 function tartalom_ell(){
   let kosar_ft = 0;
-  if (sessionStorage.getItem("NAF") === "1") {
-      document.getElementById("NAF").style.display = "block";
-      kosar_ft+=49990
-  } else {
+  /*if (sessionStorage.getItem("NAF") !== null && sessionStorage.getItem("NAF") !== "0") {
+    document.getElementById("NAF").style.display = "block";
+    kosar_ft += 49990;
+    document.querySelectorAll('#NAF span').forEach(el => {
+      el.innerHTML = (" "+sessionStorage.getItem("NAF")+" |");
+  });
+} else {
     document.getElementById("NAF").style.display = "none";
-  }
+}*/
+// Közös változók
+const kosar_arak = {
+  NAF: 49990,
+  YB: 108490,
+  AS: 60490,
+  NAJ4: 249990,
+  EA7t: 49990,
+  NR5: 29990,
+  YFR: 95390,
+  AO: 49490,
+  EA7r: 71116
+};
 
-  if (sessionStorage.getItem("YB") === "1") {
-    document.getElementById("YB").style.display = "block";
-    kosar_ft+=108490
-  } else {
-    document.getElementById("YB").style.display = "none";
-  }
-  
-  if (sessionStorage.getItem("AS") === "1") {
-    document.getElementById("AS").style.display = "block";
-    kosar_ft+=60490
-  } else {
-    document.getElementById("AS").style.display = "none";
-  }
+const cipok = [
+  "NAF", "YB", "AS", "NAJ4", "EA7t", "NR5", "YFR", "AO", "EA7r"
+];
 
-  if (sessionStorage.getItem("NAJ4") === "1") {
-    document.getElementById("NAJ4").style.display = "block";
-    kosar_ft+=249990
-  } else {
-    document.getElementById("NAJ4").style.display = "none";
-  }
+cipok.forEach(id => {
+  let itemValue = sessionStorage.getItem(id);
 
-  if (sessionStorage.getItem("EA7t") === "1") {
-    document.getElementById("EA7t").style.display = "block";
-    kosar_ft+=49990
+  if (itemValue !== null && itemValue !== "0") {
+    document.getElementById(id).style.display = "";
+    kosar_ft += kosar_arak[id];
+    document.querySelectorAll(`#${id} span`).forEach(el => {
+      el.innerHTML = ` ${itemValue} |`;
+    });
   } else {
-    document.getElementById("EA7t").style.display = "none";
+    document.getElementById(id).style.display = "none";
   }
+});
 
-  if (sessionStorage.getItem("NR5") === "1") {
-    document.getElementById("NR5").style.display = "block";
-    kosar_ft+=29990
-  } else {
-    document.getElementById("NR5").style.display = "none";
-  }
 
-  if (sessionStorage.getItem("YFR") === "1") {
-    document.getElementById("YFR").style.display = "block";
-    kosar_ft+=95390
-  } else {
-    document.getElementById("YFR").style.display = "none";
-  }
 
-  if (sessionStorage.getItem("AO") === "1") {
-    document.getElementById("AO").style.display = "block";
-    kosar_ft+=49490
-  } else {
-    document.getElementById("AO").style.display = "none";
-  }
-
-  if (sessionStorage.getItem("EA7r") === "1") {
-    document.getElementById("EA7r").style.display = "block";
-    kosar_ft+=71116
-  } else {
-    document.getElementById("EA7r").style.display = "none";
-  }
   if (kosar_ft === 0) {
     document.getElementById("ures_kosar").style.display = "block";
     document.getElementById("hr1").style.display = "none";

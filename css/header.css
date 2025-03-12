@@ -33,7 +33,7 @@ body{
     float: right;
     width: 200px;
     height: 40px;
-    margin-right: 0px;
+    margin-right: 5px;
     margin-top: 8px;
     transition: all 0.15s;
 }
