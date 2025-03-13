@@ -1,3 +1,4 @@
+meretek_id()
 let meret = sessionStorage.getItem(nev) !== null ? sessionStorage.getItem(nev) : 0;
 if (meret !== "0" && meret !== 0) {
   meret_allit("meret_" + meret);
@@ -99,3 +100,18 @@ function meret_allit(id){
     sessionStorage.setItem(nev, meret);
   }  
 }
+function meretek_id(){
+  document.querySelectorAll('.meret').forEach(item => {
+    const size = item.textContent.trim();
+    item.id = `meret_${size}`;
+  });
+}
+
+
+function handleClick(event) {
+  meret_allit(event.target.id); //függvény fut az iv-vel
+  }
+
+  document.querySelectorAll('.meret').forEach(item => {
+    item.addEventListener('click', handleClick); // Kattintáskor a handleClick függvény lesz meghívva
+});
