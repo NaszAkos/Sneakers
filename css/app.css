@@ -35,6 +35,8 @@ iframe{
     opacity: 97%;
     height: 100vh;
     z-index: 29;
+    transition: all 0.4s;
+    display: none;
 }
 #fejlec{
     height: 60px;/* VIGYÁZAT!!! ez csak akkor jó ha a fejléc mérete ennél sose nagyobb*/
@@ -64,6 +66,7 @@ iframe{
     padding-bottom: 5px;
     padding-inline: 25px;
     font-size: 14px;
+    transition: all 0.4s;
 }
 
 .cookie-banner button {

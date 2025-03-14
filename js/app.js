@@ -13,10 +13,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function sutiell() { // Ez az iframen belül fut
     if (sessionStorage.getItem('suti_elfogad') === "1") { 
-        document.getElementById('cookie-banner').style.display = 'none';
         window.parent.postMessage("sutik_eltun", "*");
     } else {
-        document.getElementById('cookie-banner').style.display = 'block';
         window.parent.postMessage("sutik_megjelen", "*");
     }
     window.parent.postMessage("sutik_elle", "*"); // Üzenet küldése a főoldalnak
@@ -25,6 +23,8 @@ function sutiell() { // Ez az iframen belül fut
 document.addEventListener("DOMContentLoaded", function () {//sütik ellenőrzés indításokr
     if (sessionStorage.getItem('suti_elfogad') === "1") { 
         document.getElementById("sutik").style.display = "none";
+        document.getElementById("sutik").style.transition = '';
+
     } else {
         document.getElementById("sutik").style.display = "block";
     }
@@ -39,7 +39,13 @@ window.addEventListener("message", function(event) {// Főoldal üzenet fogadás
         document.getElementById("sutik").style.display = "block"
     }
     if (event.data === "sutik_bezar") {
-        document.getElementById("sutik").style.display = "none"
+        const sutikElem = document.getElementById("sutik");
+        sutikElem.style.transition = 'all 0.2s ease-in-out';
+        sutikElem.style.opacity = '0';
+        setTimeout(function() {
+            sutikElem.style.display = 'none';
+        }, 200);
+
     }
     if (event.data === "mod_valt") {
         mod_valt()
@@ -55,13 +61,16 @@ window.addEventListener("message", function(event) {// Főoldal üzenet fogadás
 
 
 function suti_elfog(){
-     sessionStorage.setItem('suti_elfogad', "1");
-    document.getElementById('cookie-banner').style.display = 'none';
+    sessionStorage.setItem('suti_elfogad', "1");
+    document.getElementById("sutik").style.transition = 'all 0.4s ease-in-out';
     sutiell()
-    //document.getElementById('sutik').style.display = 'none';
+    setTimeout(function() {
+        document.getElementById("sutik").style.transition = 'none';
+    }, 400);
+    document.getElementById('sutik').style.display = 'none';
 };
 function suti_bezar(){
-    document.getElementById("cookie-banner").style.display = "none"
+    //document.getElementById("cookie-banner").style.display = "none"
     window.parent.postMessage("sutik_bezar", "*");
 
 }
@@ -163,8 +172,8 @@ function mod_valt_nyom(){//iframen belül fut
         document.getElementById("vilagosModKep").style.display="none"
         document.getElementById("sotetModKep").style.display="block"
     } else { // Világos mód
-        document.getElementById("vilagosModKep").style.display="block"
         document.getElementById("sotetModKep").style.display="none"
+        document.getElementById("vilagosModKep").style.display="block"
     }
 }
 function mod_ell() {
@@ -179,7 +188,7 @@ function mod_ell() {
             } else {
                 el.style.filter = "none";
             }
-        });
+        });       
         
 
     } else { // Világos mód
@@ -189,9 +198,9 @@ function mod_ell() {
         document.querySelectorAll("img, video, [id*='gomb'], [id*='fizetes']").forEach(el => {
             el.style.filter = "none";
         });
-        document.querySelectorAll('html, body, img, video, [id*="gomb"], [id*="fizetes"], [id*="sutik"] ').forEach(el => {
+        /*document.querySelectorAll('html, body, img, video, [id*="gomb"], [id*="fizetes"], [id*="sutik"] ').forEach(el => {
             el.style.transition = 'none';
-        });
+        });*/
     }
 }
 
@@ -211,10 +220,6 @@ function mod_valt() {
         }, 400);
     });
     //location.reload()
-}
-
-function ikonEltunt(){//iframen belül fut
-    window.parent.postMessage("modvaltas", "*");
 }
 window.onload = function() {
     mod_ell()
