@@ -42,12 +42,15 @@ cipok.forEach(id => {
   if (itemValue !== null && itemValue !== "0") {
     document.getElementById(id).style.display = "";
     kosar_ft += kosar_arak[id];
-    document.querySelectorAll(`#${id} span`).forEach(el => {
+    document.querySelectorAll(`#${id} .meret_ki`).forEach(el => {
       el.innerHTML = ` ${itemValue} |`;
     });
   } else {
     document.getElementById(id).style.display = "none";
   }
+    document.querySelectorAll(`#${id} .ar_ki`).forEach(el => {
+      el.innerHTML = ` ${ new Intl.NumberFormat('fr-FR').format(kosar_arak[id])} Ft`;
+    });
 });
 
 
