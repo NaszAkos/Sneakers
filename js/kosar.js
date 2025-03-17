@@ -69,7 +69,7 @@ cipok.forEach(id => {
     document.getElementById("fizetes").innerText = "Nincs termék"
   } else {
     document.getElementById("fizetes").style.backgroundColor = "#15ff00"
-    document.getElementById("ár").innerText = kosar_ft+" Ft"
+    document.getElementById("ár").innerText = new Intl.NumberFormat('fr-FR').format(kosar_ft)+" Ft"
   }
 }
 document.getElementById('fejlec').onload=function(){
