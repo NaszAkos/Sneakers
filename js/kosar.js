@@ -19,6 +19,9 @@ function tartalom_ell(){
 } else {
     document.getElementById("NAF").style.display = "none";
 }*/
+
+
+
 // Közös változók
 const kosar_arak = {
   NAF: 49990,
@@ -35,6 +38,8 @@ const kosar_arak = {
 const cipok = [
   "NAF", "YB", "AS", "NAJ4", "EA7t", "NR5", "YFR", "AO", "EA7r"
 ];
+
+
 
 cipok.forEach(id => {
   let itemValue = sessionStorage.getItem(id);
