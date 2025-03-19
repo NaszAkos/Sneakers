@@ -158,11 +158,14 @@ window.addEventListener("scroll", function() {//görgrtésellenőrzés, fejléc 
     }, 300);
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
-window.addEventListener('resize', function() {//betöltéskor fejléc láblés ell
-    fejlec_meretez();
-    lablec_meretez();
-});
+let resizeTimeout;
 
+window.addEventListener('resize', function() {
+    setTimeout(function() {
+        fejlec_meretez();
+        lablec_meretez();
+    }, 3000);
+});
 
 function mod_valt_nyom(){//iframen belül fut
     window.parent.postMessage("mod_valt", "*");
