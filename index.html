@@ -10,105 +10,11 @@
     <link rel="icon" type="image/x-icon" href="img/logo/sneakerz logo 2.png">
 </head>
 <body>
-    <iframe id="fejlec" src="header.html"></iframe>
-    <iframe id="sutik" src="sütik.html"></iframe>
-    <div id="fejlec_tak" style="display: none;"></div>
-    <div class="container-fluid nepszeru">
-            <div class="row align-items-center text-center text-md-start">
-                <div class="col-md-4 col-sm-12">
-                    <h1 class="fw-bold sz1">A legnépszerűbb választásunk:</h1>
-                </div>
-                <div class="col-md-4 col-sm-12 text-center nepszeruKep">
-                    <a href="cipok/Nike_Air_Force_1.html">
-                    <img src="img/cipők/főoldal/af1.png" alt="Nike Air Force 1" class="sneaker-img">
-                </a>
-                </div>
-                <div class="col-md-4 col-sm-12 szoveg2">
-                    <h1 class="fw-bold sz1 sz3"><span class="sz2">Nike Air Force 1 <span class="vonal1">| </span></span><br class="sort"><span class="sz2">49 990 Ft</span></h1>
-        
-             </div>
-            </div>
-    </div>
-    <!--div onclick="localStorage.setItem('suti_elfogad', '0');location.reload();">gomb1</div>
-    <div onclick="localStorage.setItem('suti_elfogad', '1');location.reload();">gomb2</div-->
-    <div class="vonal-vizsz"></div>
-    <div class="row valasztasok">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
-            <a href="cipok/Yeezy_Boost_350_V2.html">
-                <img class="Cipo" src="img/cipők/főoldal/Yeezy Boost 350 V2 1.png" alt="Yeezy Boost 350 V2">
-                <h3>Yeezy Boost 350 V2<br>
-                    108 490 Ft</h3>
-            </a>
-        </div>
-        <hr class="tel_valaszto">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
-            <a href="cipok/EA7_tornacipo.html">
-                <img class="Cipo" src="img/cipők/főoldal/EA7 tornacipő 1.png" alt="EA7 tornacipő">
-                <h3>EA7 tornacipő<br>
-                    49 990 Ft</h3>
-            </a>
-        </div>
-        <hr class="tel_valaszto">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
-            <a href="cipok/Adidas_superstar.html">
-                <img class="Cipo" src="img/cipők/főoldal/Adidas Superstar 1.png" alt="Adidas Superstar">
-                <h3>Adidas Superstar<br>
-                    60 490 Ft</h3>
-            </a>
-        </div>
-        <hr class="tel_valaszto">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
-            <a href="cipok/Nike_Air_Jordan_4.html">
-                <img class="Cipo" src="img/cipők/főoldal/Air Jordan 4 1.png" alt="Nike Air Jordan 4">
-                <h3>Nike Air Jordan 4<br>
-                    249 990 Ft</h3>
-            </a>
-        </div>
-        <hr class="tel_valaszto">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
-            <a href="cipok/Adidas_originals.html">
-                <img class="Cipo" src="img/cipők/főoldal/Adidas originals 1.png" alt="Adidas Originals">
-                <h3>Adidas Originals<br>
-                    49 490 Ft</h3>
-            </a>
-        </div>
-        <hr class="tel_valaszto">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
-            <a href="cipok/Nike_Revolution_5.html">
-                <img class="Cipo" src="img/cipők/főoldal/Nike Revolution 5 1.png" alt="Nike Revolution 5">
-                <h3>Nike Revolution 5<br>
-                    29 990 Ft</h3>
-            </a>
-        </div>
-        <hr class="tel_valaszto">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
-            <a href="cipok/Yeezy_Foam_Runner.html">
-                <img class="Cipo" src="img/cipők/főoldal/Yeezy Foam Runner 1.png" alt="Yeezy Foam Runner">
-                <h3>Yeezy Foam Runner<br>
-                    95 390 Ft</h3>
-            </a>
-        </div>
-        <hr class="tel_valaszto">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
-            <a href="cipok/EA7_röviszárú.html">
-                <img class="Cipo" src="img/cipők/főoldal/EA7 rövid  szárú 1.png" alt="EA7 rövid szárú">
-                <h3>EA7 rövid szárú <br>
-                    71 119 Ft</h3>
-            </a>
-        </div>
-    </div>
-    <div class="vonal-vizsz"></div>
-    <iframe id="lablec"src="footer.html"></iframe>
-
-    <!--script>
-        if (localStorage.getItem("NAF") === "0"){
-        localStorage.setItem("NAF", "0"); //érték 0
-        localStorage.setItem("AS", "0");
-        localStorage.setItem("YB", "0");
-        localStorage.setItem("megvolt", "1");
-    }
-    </script-->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/app.js"></script>
+    
+    <script>
+        window.onload = function() {
+            window.top.location.href = "fooldal.html";
+        };
+    </script>
 </body>
 </html>
