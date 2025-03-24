@@ -61,9 +61,11 @@ window.addEventListener("message", function(event) {// Főoldal üzenet fogadás
 
 
 function suti_elfog(){
+    suti_bezar()
     sessionStorage.setItem('suti_elfogad', "1");
     document.getElementById("sutik").style.transition = 'all 0.4s ease-in-out';
     sutiell()
+    document.getElementById("sutik").style.display = 'none';
     setTimeout(function() {
         document.getElementById("sutik").style.transition = 'none';
     }, 400);
