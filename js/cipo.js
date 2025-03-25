@@ -39,8 +39,10 @@ function szin_ell(nev) {
       // Ha a meret 0 vagy null, akkor szürke marad
       if (meret === "0" || meret === null || meret === 0) {
           gomb.style.backgroundColor = "#868686"; // Szürke
+          gomb.style.cursor = "no-drop"
       } else {
           gomb.style.backgroundColor = "#15ff00"; // Zöld
+          gomb.style.cursor = "pointer"
       }
   }
 }

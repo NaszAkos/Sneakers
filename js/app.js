@@ -2,7 +2,8 @@ let fejlec_meret = 0
 document.getElementById('fejlec').onload=function(){fejlec_meretez()}
 document.getElementById('sutik').onload=function(){sutik_meretez()}
 document.addEventListener("DOMContentLoaded", function () {fejlec_meretez();sutik_meretez()});
-window.onload = function () {fejlec_meretez();sutik_meretez();};
+window.onload = function () {fejlec_meretez();sutik_meretez();lablec_meretez()};
+mod_ell();
 fejlec_meretez();
 sutik_meretez();
 document.getElementById('lablec').onload=function(){lablec_meretez()}
@@ -228,4 +229,10 @@ function mod_valt() {
 }
 window.onload = function() {
     mod_ell()
+    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    if (currentScroll === 0) {
+        navbar.style.boxShadow = "none";
+    } else {
+        navbar.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)";
+    }
 };
