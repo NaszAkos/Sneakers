@@ -72,11 +72,14 @@ cipok.forEach(id => {
   }
   if (kosar_ft === 0){
     kosar_ft = "-"
+    const fizetes = getElementById("fizetes")
     document.getElementById("ár").innerText = kosar_ft
-    document.getElementById("fizetes").style.backgroundColor = "#868686"
-    document.getElementById("fizetes").innerText = "Nincs termék"
+    fizetes.style.backgroundColor = "#868686"
+    fizetes.innerText = "Nincs termék"
+    fizetes.style.cursor = "no-drop"
   } else {
-    document.getElementById("fizetes").style.backgroundColor = "#15ff00"
+    fizetes.style.backgroundColor = "#15ff00"
+    fizetes.style.cursor = "pointer"
     document.getElementById("ár").innerText = new Intl.NumberFormat('fr-FR').format(kosar_ft)+" Ft"
   }
 }

@@ -68,15 +68,16 @@ a{
     text-align: center;
     margin-inline: 4%;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 .ajanlas>a:hover{
     transition: all 0.3s;
-    transform: scale(1.03);
-    background-color: #f3f3f3;
-    box-shadow: 0 0 4px 4px rgba(64, 64, 64, 0.153);
+    background-color: #e5e5e5;
+    box-shadow: 0 0 4px 4px rgba(16, 16, 16, 0.153);
 }
 .ajanlas>a img{
     max-width: 100%;
+    max-height: 250px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -128,5 +129,10 @@ button {
 @media screen and (min-width: 768px){
     .tel_valaszto{
         display: none;
+    }
+}
+@media screen and (min-width: 767px){
+    .ajanlas>a:hover{
+        transform: scale(1.03);
     }
 }

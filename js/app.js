@@ -188,7 +188,7 @@ function mod_ell() {
         document.documentElement.style.filter = "invert(1)";
         document.getElementById("sutik").style.filter = "invert(1)";
 
-        document.querySelectorAll("img, video, [id*='gomb'], [id*='fizetes']").forEach(el => {
+        document.querySelectorAll("img, video, [id*='gomb'], [id*='fizetes'], [class*='rating']").forEach(el => {
             if (!el.classList.contains("mod_valtas")) {
                 el.style.filter = "invert(1)";
             } else {
