@@ -1,7 +1,6 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    margin: 50px;
 }
 .rating {
     direction: rtl;
@@ -22,7 +21,8 @@ body {
     color: gold;
 }
 .container {
-    max-width: 400px;
+    margin: 5%;
+    width: 100%;
     margin: auto;
     padding: 20px;
     border: 1px solid #ccc;
