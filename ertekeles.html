@@ -15,7 +15,7 @@
     <div id="fejlec_tak" style="display: none;"></div>
     <br>
     <div class="container">
-        <h2>Értékeld Üzletünket!</h2>
+        <h2 id="felirat">Értékeld Üzletünket!</h2>
         <form>
             <div class="rating">
                 <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
@@ -25,10 +25,27 @@
                 <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
             </div>
             <br>
-            <button type="submit" id="kildes">Küldés</button>
+            <button type="submit" id="kuldes" class="btn btn-success">Küldés</button>
         </form>
     </div>
     <script src="js/app.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        function loadRatingFromURL() {
+        const params = new URLSearchParams(window.location.search);
+        const rating = params.get("rating");
+        if (rating) {
+            const ratingInput = document.getElementById("star" + rating);
+            if (ratingInput) {
+                ratingInput.checked = true;
+                document.getElementById("felirat").innerHTML = "Köszönjük értékelésed!"
+                document.getElementById("kuldes").style.display = "none"
+            }
+        }        
+    }
+
+    // Az oldal betöltésekor automatikusan beállítja az értékelést
+    window.onload = loadRatingFromURL;
+    </script>
 </body>
 </html>

@@ -130,6 +130,9 @@ button {
     .tel_valaszto{
         display: none;
     }
+    .ajanlas{
+        padding-left: 2px;
+    }
 }
 @media screen and (min-width: 767px){
     .ajanlas>a:hover{

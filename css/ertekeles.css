@@ -21,11 +21,13 @@ body {
     color: gold;
 }
 .container {
-    margin: 5%;
     width: 100%;
     margin: auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
     text-align: center;
+}
+#felirat, .rating{
+    margin-bottom: 7%;
 }
