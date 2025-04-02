@@ -33,7 +33,7 @@ body{
     float: right;
     width: 220px;
     height: 40px;
-    margin-right: 5px;
+    margin-right: 6px;
     margin-top: 8px;
     transition: all 0.15s;
 }
@@ -47,8 +47,9 @@ body{
     border: 0px;
     font-size: 20px;
     float: right;
-    width: 160px;
+    width: 170px;
     height: 40px;
+    padding-left: 10px;
 }
 
 .kereses img{
