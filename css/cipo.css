@@ -52,8 +52,25 @@ img{
     margin-bottom: 10px;
 }
 
+.cipoleiras{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .szinkicsinyito{
-    font-size: large;
+    font-size: 20px;
+}
+
+.extraara{
+    color: #0e0e0e;
+    margin-left: 3px;
+    font-size: 24px;
+}
+
+.extrameret{
+    margin-left: 6px;
+    font-size: medium;
+    color: #b3b1b1;
+    word-spacing: 4px;
 }
 
 .szinek{
