@@ -51,9 +51,9 @@ a{
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
-.valasztasok>div:hover{
     transition: all 0.3s;
+}
+.valasztasok>div:hover{ 
     background-color: #e5e5e5;
     box-shadow: 0 0 4px 4px rgba(16, 16, 16, 0.153);
 }
