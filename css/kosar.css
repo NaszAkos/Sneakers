@@ -74,8 +74,10 @@ a{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.ajanlas>a:hover{
+.ajanlas>a{
     transition: all 0.3s;
+}
+.ajanlas>a:hover{
     background-color: #e5e5e5;
     box-shadow: 0 0 4px 4px rgba(16, 16, 16, 0.153);
 }
@@ -102,7 +104,7 @@ a{
 }
 input {
     padding: 5px;
-    width: 90%;
+    width: 100%;
     /*border-radius: 20px;*/
     border: 1px solid black;
     color: black;
@@ -115,6 +117,13 @@ button {
     padding: 5px;
     margin-top: 5px;
     cursor: pointer;
+}
+#coupon-input{
+    width: 100%;
+    border-radius: 5px;
+}
+#kuponBevGomb{
+    border-radius: 5px;
 }
 .cipokep{
     width: 75px;
@@ -130,6 +139,12 @@ button {
         font-size: 30px;
         padding: 3px;
     }
+    #fizetes{
+        height: 10%;
+        width: 90%;
+        font-size: 180%;
+        margin-inline: auto;
+    }
 }
 @media screen and (min-width: 768px){
     .tel_valaszto{
@@ -142,5 +157,10 @@ button {
 @media screen and (min-width: 767px){
     .ajanlas>a:hover{
         transform: scale(1.03);
+    }
+}
+@media screen and (max-width: 991px){
+    #fizetes, #kuponBevGomb{
+        margin-inline: auto;
     }
 }
