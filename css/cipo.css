@@ -79,12 +79,21 @@ img{
 .szinek col{
     font-size: 35px;
 }
-.szin_kep{
+
+.szin_kep {
     margin-left: 35px;
-    margin-bottom: 130px;
 }
-.szin_kep .col-6{
-    height: 300px;
+
+.kep1{
+    width: 48%;
+    border: 1px solid #c6c6c6;
+    background-color: white;
+    border-radius: 30px;
+    margin: 1%;
+    margin-bottom: 30px ;
+    transition: all  0.3s;
+}
+.kep2{
     width: 48%;
     border: 1px solid #c6c6c6;
     background-color: white;
