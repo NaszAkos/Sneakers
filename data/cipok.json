@@ -1,0 +1,78 @@
+[
+  {
+    "id": "adidas_superstar_white",
+    "rid" : "ASW",
+    "nev": "Adidas Superstar White Edition",
+    "nevSzin" : "Adidas Superstar",
+    "ar": 60490,
+    "meretek": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "kepek": [
+      "../img/cipők/Adidas Superstar/Adidas Superstar feh.png",
+      "../img/cipők/Adidas Superstar/fehér/Adidas Superstar feh 2.png",
+      "../img/cipők/Adidas Superstar/fehér/Adidas Superstar feh 3.png"
+    ],
+    "logo": "../img/logo/adidas fekete logo.png",
+    "valtozatok": [
+      {
+        "kep": "../img/cipők/Adidas Superstar/Adidas Superstar 1.png",
+        "url": "adidas_superstar"
+      },
+      {
+        "kep": "../img/cipők/Adidas Superstar/Adidas Superstar pir.png",
+        "url": "adidas_superstar_red"
+      }
+    ]
+  },
+
+
+  {
+    "id": "adidas_superstar",
+    "rid" : "AS",
+    "nev": "Adidas Superstar",
+    "nevSzin" : "Adidas Superstar",
+    "ar": 60490,
+    "meretek": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "kepek": [
+      "../img/cipők/Adidas Superstar/Adidas Superstar 1.png",
+      "../img/cipők/Adidas Superstar/Adidas Superstar 2.png",
+      "../img/cipők/Adidas Superstar/Adidas Superstar 3.png"
+    ],
+    "logo": "../img/logo/adidas fekete logo.png",
+    "valtozatok": [
+      {
+        "kep": "../img/cipők/Adidas Superstar/Adidas Superstar feh.png",
+        "url": "adidas_superstar_white"
+      },
+      {
+        "kep": "../img/cipők/Adidas Superstar/Adidas Superstar pir.png",
+        "url": "adidas_superstar_red"
+      }
+    ]
+  },
+
+  {
+    "id": "adidas_superstar_red",
+    "rid" : "ASR",
+    "nev": "Adidas Superstar Red Edition",
+    "nevSzin" : "Adidas Superstar",
+    "ar": 60490,
+    "meretek": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "kepek": [
+      "../img/cipők/Adidas Superstar/Adidas Superstar pir.png",
+      "../img/cipők/Adidas Superstar/piros/Adidas Superstar",
+      "../img/cipők/Adidas Superstar/piros/Adidas Superstar pir 2.png"
+    ],
+    "logo": "../img/logo/adidas fekete logo.png",
+    "valtozatok": [
+      {
+        "kep": "../img/cipők/Adidas Superstar/Adidas Superstar 1.png",
+        "url": "adidas_superstar"
+      },
+      {
+        "kep": "../img/cipők/Adidas Superstar/Adidas Superstar feh.png",
+        "url": "adidas_superstar_white"
+      }
+    ]
+  }
+  
+]

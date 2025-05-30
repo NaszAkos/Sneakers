@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Termék betöltése...</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/app.css">
+  <link rel="stylesheet" href="../css/cipo.css">
+  <link rel="icon" type="image/x-icon" href="../img/logo/sneakerz logo 2.png">
+</head>
+<body>
+  <iframe id="fejlec" src="../header.html"></iframe>
+  <iframe id="sutik" src="../sütik.html"></iframe>
+  <div id="fejlec_tak" style="display: none;"></div>
+  <div class="logo"><img class="mod_valtas" src="" alt="Logo"></div>
+  <div class="vonal-vizsz"></div>
+
+  <div class="row visz1">
+    <div class="col-md-6">
+      <div class="kep">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide kepek" data-bs-ride="carousel">
+          <div class="carousel-indicators"></div>
+          <div class="carousel-inner"></div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Előző</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Következő</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="szoveg col-md-6">
+      <h1 id="termekNev">Betöltés...</h1>
+      <div class="meretek row" id="meretLista"></div>
+    </div>
+  </div>
+
+  <div class="row also">
+    <div class="szin_kep row col-md-6" id="valtozatok"></div>
+    <div class="kosarba row col-md-6">
+      <div class="justify-content-between" id="gomb" onclick="kosar(termekNevGlob)">
+        Kosárba
+      </div>
+    </div>
+  </div>
+
+  <div class="vonal-vizsz"></div>
+  <iframe id="lablec" src="../footer.html"></iframe>
+
+  <script src="../js/cipok.js"></script>
+  <script src="../js/cipo.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
