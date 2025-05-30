@@ -1,3 +1,6 @@
+let nev = "";
+window.termekNevGlob = nev
+let termekNevGlob = "";
 
   async function betoltTermek() {
     const urlParams = new URLSearchParams(window.location.search);
@@ -8,12 +11,12 @@
     const termek = termekek.find(cipo => cipo.id === termekId);
 
     if (!termek) {
-      document.body.innerHTML = "<h1>Termék nem található</h1>";
+      document.body.innerHTML = "<h1>A termék nem található!</h1>";
       return;
     }
 
     // Adatok beillesztése
-    var nev = termek.rid
+    nev = termek.rid
     document.title = termek.nev;
     document.querySelector("h1").innerHTML = `${termek.nev}<br>${termek.ar.toLocaleString()} Ft`;
 
@@ -43,6 +46,10 @@
         </div>
       </div>
     `).join("");
+    let script = document.createElement("script");
+    script.src = "../js/cipo.js";
+    document.body.appendChild(script);
+
   }
 
   window.onload = betoltTermek();

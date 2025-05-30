@@ -10,75 +10,44 @@ sessionStorage.setItem("YB", "1")*/
 
 let kosar_ft = 0;
 tartalom_ell()
-function tartalom_ell() {
-  const kosar_arak = {
-    NAF: 49990,
-    YB: 108490,
-    AS: 60490,
-    NAJ4: 249990,
-    EA7t: 49990,
-    NR5: 29990,
-    YFR: 95390,
-    AO: 49490,
-    EA7r: 71116
-  };
-
-  const cipok = [
-    "NAF", "YB", "AS", "NAJ4", "EA7t", "NR5", "YFR", "AO", "EA7r"
-  ];
-
+async function tartalom_ell() {
+  const response = await fetch('data/cipok.json');
+  const termekek = await response.json();
+  const kosarLista = document.getElementById("koras_tartalma");
+  //kosarLista.innerHTML = '<hr id="hr1">';
+  kosarLista.innerHTML = '<hr id="hr1">';
   let kosar_ft = 0;
+  let van_termek = false;
 
-  cipok.forEach(id => {
-    let itemValue = sessionStorage.getItem(id);
+  termekek.forEach(termek => {
+    const db = sessionStorage.getItem(termek.rid);
+    if (db && db !== "0") {
+      van_termek = true;
+      const li = document.createElement("li");
+      li.id = termek.id;
 
-    if (itemValue !== null && itemValue !== "0") {
-      // Ha a termék nem lett eltávolítva (értéke nem 0), jelenjen meg
-      document.getElementById(id).style.display = "";
-      kosar_ft += kosar_arak[id];
-      document.querySelectorAll(`#${id} .meret_ki`).forEach(el => {
-        el.innerHTML = ` ${itemValue} |`;
-      });
-    } else {
-      // Ha a termék eltávolítva lett, ne jelenjen meg
-      document.getElementById(id).style.display = "none";
+      li.innerHTML = `
+        <a href="cipok/cipok.html?id=${termek.id}">
+          <img class="cipokep" src="${termek.kepek[0]}" alt="">
+          ${termek.nev} | <span class="meret_ki">${db} | </span> <span class="ar_ki">${new Intl.NumberFormat('fr-FR').format(termek.ar)} Ft</span>
+        </a>
+        <a class="eltavolitas" onclick="sessionStorage.setItem('${termek.rid}', '0'); tartalom_ell();">
+          <img class="mod_valtas" src="img/logo/Eltávolítás.png" alt="">
+        </a>
+        <hr>
+      `;
+
+      kosarLista.appendChild(li);
+      kosar_ft += termek.ar;
     }
-
-    // Ár frissítése minden esetben
-    document.querySelectorAll(`#${id} .ar_ki`).forEach(el => {
-      el.innerHTML = ` ${new Intl.NumberFormat('fr-FR').format(kosar_arak[id])} Ft`;
-    });
   });
 
-  // Ha a kosár üres, mutasd az üzenetet
-  if (kosar_ft === 0) {
-    document.getElementById("ures_kosar").style.display = "block";
-    document.getElementById("hr1").style.display = "none";
-  } else {
-    document.getElementById("ures_kosar").style.display = "none";
-    document.getElementById("hr1").style.display = "block";
-  }
+  document.getElementById("ures_kosar").style.display = van_termek ? "none" : "block";
+  document.getElementById("hr1").style.display = van_termek ? "block" : "none";
 
-  // Ha a kosár értéke kisebb, mint 100000 Ft, akkor szállítási költség
-  if (kosar_ft < 100000) {
-    document.getElementById("száll_ár").innerText = 1000 + " Ft";
-  }
-
-  // Frissítsük a kosár teljes értékét
-  const fizetes = document.getElementById("fizetes");
-
-  if (kosar_ft === 0) {
-    kosar_ft = "-";
-    document.getElementById("ár").innerText = kosar_ft;
-    fizetes.style.backgroundColor = "#868686";
-    fizetes.innerText = "Nincs termék";
-    fizetes.style.cursor = "no-drop";
-  } else {
-    fizetes.style.backgroundColor = "#15ff00";
-    fizetes.style.cursor = "pointer";
-    document.getElementById("ár").innerText = new Intl.NumberFormat('fr-FR').format(kosar_ft) + " Ft";
-  }
+  document.getElementById("ár").innerText = `${new Intl.NumberFormat('fr-FR').format(kosar_ft)} Ft`;
 }
+
 
 document.getElementById('fejlec').onload=function(){
   const iframe = document.getElementById('fejlec');

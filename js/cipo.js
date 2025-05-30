@@ -12,8 +12,10 @@ function kosar(nev) {
     if (meret !== "0" && meret !== null && meret !== 0) {
         sessionStorage.setItem(nev, meret);
         window.top.location.href = "../kosár.html";
+        //console.log("kosárra irányít")
     }
 } else {
+    //console.log("nem kosárra irányít")
     sessionStorage.setItem(nev, 0);
     document.querySelectorAll('.meretek>div').forEach(el => {
       el.style.backgroundColor = "";
@@ -111,7 +113,7 @@ function meretek_id(){
 
 
 function handleClick(event) {
-  meret_allit(event.target.id); //függvény fut az iv-vel
+  meret_allit(event.target.id); //függvény fut az id-vel
   }
 
   document.querySelectorAll('.meret').forEach(item => {

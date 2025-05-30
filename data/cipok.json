@@ -1,29 +1,4 @@
 [
-  {
-    "id": "adidas_superstar_white",
-    "rid" : "ASW",
-    "nev": "Adidas Superstar White Edition",
-    "nevSzin" : "Adidas Superstar",
-    "ar": 60490,
-    "meretek": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
-    "kepek": [
-      "../img/cipők/Adidas Superstar/Adidas Superstar feh.png",
-      "../img/cipők/Adidas Superstar/fehér/Adidas Superstar feh 2.png",
-      "../img/cipők/Adidas Superstar/fehér/Adidas Superstar feh 3.png"
-    ],
-    "logo": "../img/logo/adidas fekete logo.png",
-    "valtozatok": [
-      {
-        "kep": "../img/cipők/Adidas Superstar/Adidas Superstar 1.png",
-        "url": "adidas_superstar"
-      },
-      {
-        "kep": "../img/cipők/Adidas Superstar/Adidas Superstar pir.png",
-        "url": "adidas_superstar_red"
-      }
-    ]
-  },
-
 
   {
     "id": "adidas_superstar",
@@ -42,6 +17,31 @@
       {
         "kep": "../img/cipők/Adidas Superstar/Adidas Superstar feh.png",
         "url": "adidas_superstar_white"
+      },
+      {
+        "kep": "../img/cipők/Adidas Superstar/Adidas Superstar pir.png",
+        "url": "adidas_superstar_red"
+      }
+    ]
+  },
+
+  {
+    "id": "adidas_superstar_white",
+    "rid" : "ASW",
+    "nev": "Adidas Superstar White Edition",
+    "nevSzin" : "Adidas Superstar",
+    "ar": 60490,
+    "meretek": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "kepek": [
+      "../img/cipők/Adidas Superstar/Adidas Superstar feh.png",
+      "../img/cipők/Adidas Superstar/fehér/Adidas Superstar feh 2.png",
+      "../img/cipők/Adidas Superstar/fehér/Adidas Superstar feh 3.png"
+    ],
+    "logo": "../img/logo/adidas fekete logo.png",
+    "valtozatok": [
+      {
+        "kep": "../img/cipők/Adidas Superstar/Adidas Superstar 1.png",
+        "url": "adidas_superstar"
       },
       {
         "kep": "../img/cipők/Adidas Superstar/Adidas Superstar pir.png",
@@ -71,6 +71,106 @@
       {
         "kep": "../img/cipők/Adidas Superstar/Adidas Superstar feh.png",
         "url": "adidas_superstar_white"
+      }
+    ]
+  },
+
+
+  {
+    "id": "adidas_originals",
+    "rid" : "AO",
+    "nev": "Adidas Originals",
+    "nevSzin" : "Adidas Originals",
+    "ar": 49490,
+    "meretek": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "kepek": [
+      "../img/cipők/Adidas Originals/Adidas originals 1.png",
+      "../img/cipők/Adidas Originals/Adidas originals 2.png",
+      "../img/cipők/Adidas Originals/Adidas originals 3.png"
+    ],
+    "logo": "../img/logo/adidas fekete logo.png",
+    "valtozatok": [
+      {
+        "kep": "../img/cipők/Adidas Originals/Adidas originals fek.png",
+        "url": "adidas_originals_black"
+      },
+      {
+        "kep": "../img/cipők/Adidas Originals/Adidas originals p.png",
+        "url": "adidas_originals_red"
+      }
+    ]
+  },
+  {
+    "id": "adidas_originals_black",
+    "rid" : "AOB",
+    "nev": "Adidas Originals Black Edition",
+    "nevSzin" : "Adidas Originals",
+    "ar": 49490,
+    "meretek": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "kepek": [
+      "../img/cipők/Adidas Originals/Adidas originals fek.png",
+      "../img/cipők/Adidas Originals/fekete/Adidas originals fek 1.png",
+      "../img/cipők/Adidas Originals/fekete/Adidas originals fek 2.png"
+    ],
+    "logo": "../img/logo/adidas fekete logo.png",
+    "valtozatok": [
+      {
+        "kep": "../img/cipők/Adidas Originals/Adidas originals 1.png",
+        "url": "adidas_originals"
+      },
+      {
+        "kep": "../img/cipők/Adidas Originals/Adidas originals p.png",
+        "url": "adidas_originals_red"
+      }
+    ]
+  },
+
+  {
+    "id": "adidas_originals_red",
+    "rid" : "AOR",
+    "nev": "Adidas Originals Red Edition  ",
+    "nevSzin" : "Adidas Originals",
+    "ar": 49490,
+    "meretek": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "kepek": [
+      "../img/cipők/Adidas Originals/Adidas originals p.png",
+      "../img/cipők/Adidas Originals/piros/adidas originals pir1.png",
+      "../img/cipők/Adidas Originals/piros/adidas originals pir2.png"
+    ],
+    "logo": "../img/logo/adidas fekete logo.png",
+    "valtozatok": [
+      {
+        "kep": "../img/cipők/Adidas Originals/Adidas originals fek.png",
+        "url": "adidas_originals_black"
+      },
+      {
+        "kep": "../img/cipők/Adidas Originals/Adidas originals p.png",
+        "url": "adidas_originals_red"
+      }
+    ]
+  },
+
+  {
+    "id": "minta",
+    "rid" : "rövidített név",
+    "nev": "oldal név",
+    "nevSzin" : "szin név",
+    "ar": "ár",
+    "meretek": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "kepek": [
+      "../img/cipők/Adidas Superstar/Adidas Superstar 1.png",
+      "../img/cipők/Adidas Superstar/Adidas Superstar 2.png",
+      "../img/cipők/Adidas Superstar/Adidas Superstar 3.png"
+    ],
+    "logo": "../img/logo/adidas fekete logo.png",
+    "valtozatok": [
+      {
+        "kep": "../img/cipők/Adidas Superstar/Adidas Superstar feh.png",
+        "url": "adidas_superstar_white"
+      },
+      {
+        "kep": "../img/cipők/Adidas Superstar/Adidas Superstar pir.png",
+        "url": "adidas_superstar_red"
       }
     ]
   }
