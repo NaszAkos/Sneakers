@@ -148,31 +148,6 @@
         "url": "adidas_originals_red"
       }
     ]
-  },
-
-  {
-    "id": "minta",
-    "rid" : "rövidített név",
-    "nev": "oldal név",
-    "nevSzin" : "szin név",
-    "ar": "ár",
-    "meretek": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
-    "kepek": [
-      "../img/cipők/Adidas Superstar/Adidas Superstar 1.png",
-      "../img/cipők/Adidas Superstar/Adidas Superstar 2.png",
-      "../img/cipők/Adidas Superstar/Adidas Superstar 3.png"
-    ],
-    "logo": "../img/logo/adidas fekete logo.png",
-    "valtozatok": [
-      {
-        "kep": "../img/cipők/Adidas Superstar/Adidas Superstar feh.png",
-        "url": "adidas_superstar_white"
-      },
-      {
-        "kep": "../img/cipők/Adidas Superstar/Adidas Superstar pir.png",
-        "url": "adidas_superstar_red"
-      }
-    ]
   }
   
 ]

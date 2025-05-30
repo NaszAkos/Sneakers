@@ -11,7 +11,7 @@ let termekNevGlob = "";
     const termek = termekek.find(cipo => cipo.id === termekId);
 
     if (!termek) {
-      document.body.innerHTML = "<h1>A termék nem található!</h1>";
+      document.body.innerHTML = "<iframe id='fejlec' src='../header.html'></iframe> <iframe id='sutik' src='../sütik.html'></iframe><h1>A termék nem található!</h1>";
       return;
     }
 
