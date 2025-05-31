@@ -16,7 +16,7 @@
             <img class="logo" onclick="konrk_keres('Yeezy')" src="img/logo/Yeezy fekete logo.png" alt="">
             <img class="logo" onclick="konrk_keres('Adidas')" src="img/logo/adidas fekete logo.png" alt="">
             -->
-            <a href="kosár.html" target="_parent" id="kosrikon" class="kosar_"><img src="img/logo/kosar.png" alt=""></a>
+            <a href="kosár.html" target="_parent" id="kosrikon" class="kosar_"><img src="img/logo/kosar.png" alt=""><div id="kosarDb">1</div></a>
             <div class="kereses" id="keresesikon"><a href="" onclick="keres()"><img src="img/logo/kereses.png" alt=""></a><input id="kereses_inp" placeholder="Keresés" onkeypress="handleKeyPress(event)"></input></div>
             <a href="" id="mod" onclick="mod_valt_nyom();ikonEltunt();window.parent.postMessage('modvaltas','*');"><img id="vilagosModKep" src="img/logo/világos mód.png" alt=""><img id="sotetModKep" src="img/logo/sötét mód.png" alt=""></a>
             
@@ -56,6 +56,32 @@
 
         //sleep(1);
         //window.location.reload()
+    dbEll()
+    async function dbEll() {
+        const response = await fetch('data/cipok.json');
+        const termekek = await response.json();
+        let db_szamlalo = 0;
+        let ikon = document.getElementById('kosarDb');
+
+        termekek.forEach(termek => {
+            const db = sessionStorage.getItem(termek.rid);
+            if (db !== null && db !== "0") {
+                db_szamlalo += 1; // csak 1-et számolunk, ha benne van
+            }
+        });
+
+        if (db_szamlalo > 0) {
+            ikon.textContent = db_szamlalo;
+            ikon.style.display = "block";
+        } else {
+            ikon.style.display = "none";
+        }
+    }
+    window.addEventListener("message", function(event) {// Főoldal üzenet fogadás
+    if (event.data === "dbEll") {
+        dbEll()
+         
+    }})
     </script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>

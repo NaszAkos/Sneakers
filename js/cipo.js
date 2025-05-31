@@ -14,7 +14,7 @@ function kosar(nev) {
         window.top.location.href = "../kosár.html";
         //console.log("kosárra irányít")
     }
-} else {
+  } else {
     //console.log("nem kosárra irányít")
     sessionStorage.setItem(nev, 0);
     document.querySelectorAll('.meretek>div').forEach(el => {
@@ -22,9 +22,10 @@ function kosar(nev) {
     });
     meret = 0
     szin_ell(nev);
-    
+      
   }
   szin_ell(nev);
+  document.getElementById("fejlec").contentWindow.postMessage("dbEll", "*");
 }
 
 function szin_ell(nev) {
