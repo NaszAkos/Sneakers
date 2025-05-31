@@ -1,5 +1,5 @@
 body{
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     width: 100%;
 }
 iframe{
@@ -50,6 +50,7 @@ img{
 .meretek{
     margin-left: 7%;
     margin-bottom: 10px;
+    width: 90%;
 }
 
 .cipoleiras{
@@ -137,6 +138,9 @@ img{
 }
 .szoveg .row, .visz1, .also{
     width: 99%;
+}
+.szoveg{
+    width: 49,1%;
 }
 .also{
     width: 100%;
