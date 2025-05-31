@@ -44,6 +44,7 @@ async function tartalom_ell() {
 
   document.getElementById("ures_kosar").style.display = van_termek ? "none" : "block";
   document.getElementById("hr1").style.display = van_termek ? "block" : "none";
+  document.getElementById("fizetes").style.backgroundColor = van_termek ? "#15ff00" : "#868686";
 
   document.getElementById("ár").innerText = `${new Intl.NumberFormat('fr-FR').format(kosar_ft)} Ft`;
 }

@@ -49,8 +49,8 @@ let termekNevGlob = "";
     let script = document.createElement("script");
     script.src = "../js/app.js";
     document.body.appendChild(script);
-    let script2 = document.createElement("script");
-    script2.src = "../js/cipo.js";
+    script = document.createElement("script");
+    script.src = "../js/cipo.js";
     document.body.appendChild(script);
 
   }

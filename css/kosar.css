@@ -131,6 +131,9 @@ button {
     margin-bottom: 0px;
     margin-right: 5px;
 }
+/* #fizetes, li, #hr1 #ures_kosar{
+    transition: all 0.3s;
+} */
 @media screen and (max-width: 500px){
     .fizetes{
         width: 150px;

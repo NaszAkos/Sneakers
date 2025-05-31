@@ -140,12 +140,12 @@
     "logo": "../img/logo/adidas fekete logo.png",
     "valtozatok": [
       {
-        "kep": "../img/cipők/Adidas Originals/Adidas originals fek.png",
-        "url": "adidas_originals_black"
+        "kep": "../img/cipők/Adidas Originals/Adidas originals 1.png",
+        "url": "adidas_originals"
       },
       {
-        "kep": "../img/cipők/Adidas Originals/Adidas originals p.png",
-        "url": "adidas_originals_red"
+        "kep": "../img/cipők/Adidas Originals/Adidas originals fek.png",
+        "url": "adidas_originals_black"
       }
     ]
   },
@@ -484,7 +484,7 @@
     "meretek": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
     "kepek": [
       "../img/cipők/Yeezy Foam Runner/Yeezy Foam Runner feh.png",
-      "../img/cipők/Yeezy Foam Runner/feher/Yeezy Foam Runner feh 1.png",
+      "../img/cipők/Yeezy Foam Runner/feher/Yeezy Foam Runner feh 3.png",
       "../img/cipők/Yeezy Foam Runner/feher/Yeezy Foam Runner feh 2.png"
     ],
     "logo": "../img/logo/Yeezy fekete logo.png",
@@ -608,7 +608,7 @@
     "ar": 49990,
     "meretek": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
     "kepek": [
-      "../img/cipők/főoldal/Nike Air Force 1 1.png",
+      "../img/cipők/Nike Air Force 1 '07/Nike Air Force 1 1.png",
       "../img/cipők/Nike Air Force 1 '07/Nike Air Force 1 2.png",
       "../img/cipők/Nike Air Force 1 '07/Nike Air Force 1 3.png"
     ],
@@ -640,7 +640,7 @@
     "logo": "../img/logo/Nike fekete logo.png",
     "valtozatok": [
       {
-        "kep": "../img/cipők/főoldal/Nike Air Force 1 1.png",
+        "kep": "../img/cipők/Nike Air Force 1 '07/Nike Air Force 1 1.png",
         "url": "nike_air_force_1"
       },
       {
@@ -665,7 +665,7 @@
     "logo": "../img/logo/Nike fekete logo.png",
     "valtozatok": [
       {
-        "kep": "../img/cipők/főoldal/Nike Air Force 1 1.png",
+        "kep": "../img/cipők/Nike Air Force 1 '07/Nike Air Force 1 1.png",
         "url": "nike_air_force_1"
       },
       {
