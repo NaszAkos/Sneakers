@@ -248,5 +248,430 @@
         "url": "ea7_tornacipo_blue"
       }
     ]
+  },
+
+  {
+    "id": "ea7_tornacipo_white",
+    "rid" : "EA7tW",
+    "nev": "EA7 tornacipő White Edition",
+    "nevSzin" : "EA7 tornacipő",
+    "ar": 49990,
+    "meretek": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "kepek": [
+      "../img/cipők/EA7 tornacipő/EA7 tornacipő feh.png",
+      "../img/cipők/EA7 tornacipő/feher/EA7 tornacipő feh 1.png",
+      "../img/cipők/EA7 tornacipő/feher/EA7 tornacipő feh 2.png"
+    ],
+    "logo": "../img/logo/EA7 fekete logo.png",
+    "valtozatok": [
+      {
+        "kep": "../img/cipők/EA7 tornacipő/EA7 tornacipő 1.png",
+        "url": "ea7_tornacipo"
+      },
+      {
+        "kep": "../img/cipők/EA7 tornacipő/EA7 tornacipő k.png",
+        "url": "ea7_tornacipo_blue"
+      }
+    ]
+  },
+
+  {
+    "id": "ea7_tornacipo_blue",
+    "rid" : "EA7tB",
+    "nev": "EA7 tornacipő Blue Edition",
+    "nevSzin" : "EA7 tornacipő",
+    "ar": 49990,
+    "meretek": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "kepek": [
+      "../img/cipők/EA7 tornacipő/EA7 tornacipő k.png",
+      "../img/cipők/EA7 tornacipő/kek/EA7 tornacipő kek 1.png",
+      "../img/cipők/EA7 tornacipő/kek/EA7 tornacipő kek 2.png"
+    ],
+    "logo": "../img/logo/EA7 fekete logo.png",
+    "valtozatok": [
+      {
+        "kep": "../img/cipők/EA7 tornacipő/EA7 tornacipő 1.png",
+        "url": "ea7_tornacipo"
+      },
+      {
+        "kep": "../img/cipők/EA7 tornacipő/EA7 tornacipő feh.png",
+        "url": "ea7_tornacipo_white"
+      }
+    ]
+  },
+
+  {
+    "id": "nike_air_jordan_4",
+    "rid" : "NAJ4",
+    "nev": "Nike Air Jordan 4",
+    "nevSzin" : "Nike Air Jordan 4",
+    "ar": 249990,
+    "meretek": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "kepek": [
+      "../img/cipők/Air Jordan 4/Air Jordan 4 1.png",
+      "../img/cipők/Air Jordan 4/Air Jordan 4 2.png",
+      "../img/cipők/Air Jordan 4/Air Jordan 4 3.png"
+    ],
+    "logo": "../img/logo/Nike fekete logo.png",
+    "valtozatok": [
+      {
+        "kep": "../img/cipők/Air Jordan 4/Air Jordan 4 fek.png",
+        "url": "nike_air_jordan_4_black"
+      },
+      {
+        "kep": "../img/cipők/Air Jordan 4/Air Jordan 4 pir.png",
+        "url": "nike_air_jordan_4_red"
+      }
+    ]
+  }, 
+
+  {
+    "id": "nike_air_jordan_4_black",
+    "rid" : "NAJ4B",
+    "nev": "Nike Air Jordan 4 Black Edition",
+    "nevSzin" : "Nike Air Jordan 4",
+    "ar": 249990,
+    "meretek": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "kepek": [
+      "../img/cipők/Air Jordan 4/Air Jordan 4 fek.png",
+      "../img/cipők/Air Jordan 4/fekete/air jordan fekete1.png",
+      "../img/cipők/Air Jordan 4/fekete/air jordan fekete2.png"
+    ],
+    "logo": "../img/logo/Nike fekete logo.png",
+    "valtozatok": [
+      {
+        "kep": "../img/cipők/Air Jordan 4/Air Jordan 4 1.png",
+        "url": "nike_air_jordan_4"
+      },
+      {
+        "kep": "../img/cipők/Air Jordan 4/Air Jordan 4 pir.png",
+        "url": "nike_air_jordan_4_red"
+      }
+    ]
+  },
+
+  {
+    "id": "nike_air_jordan_4_red",
+    "rid" : "NAJ4R",
+    "nev": "Nike Air Jordan 4 Red Edition",
+    "nevSzin" : "Nike Air Jordan 4",
+    "ar": 249990,
+    "meretek": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "kepek": [
+      "../img/cipők/Air Jordan 4/Air Jordan 4 pir.png",
+      "../img/cipők/Air Jordan 4/piros/Air Jordan 4 red 2.png",
+      "../img/cipők/Air Jordan 4/piros/Air Jordan 4 red 3.png"
+    ],
+    "logo": "../img/logo/Nike fekete logo.png",
+    "valtozatok": [
+      {
+        "kep": "../img/cipők/Air Jordan 4/Air Jordan 4 fek.png",
+        "url": "nike_air_jordan_4_black"
+      },
+      {
+        "kep": "../img/cipők/Air Jordan 4/Air Jordan 4 1.png",
+        "url": "nike_air_jordan_4"
+      }
+    ]
+  },
+
+  {
+    "id": "nike_revolution_5",
+    "rid" : "NR5",
+    "nev": "Nike Revolution 5",
+    "nevSzin" : "Nike Revolution 5",
+    "ar": 29990,
+    "meretek": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "kepek": [
+      "../img/cipők/Nike Revolution 5/Nike Revolution 5 1.png",
+      "../img/cipők/Nike Revolution 5/Nike Revolution 5 2.png",
+      "../img/cipők/Nike Revolution 5/Nike Revolution 5 3.png"
+    ],
+    "logo": "../img/logo/Nike fekete logo.png",
+    "valtozatok": [
+      {
+        "kep": "../img/cipők/Nike Revolution 5/Nike Revolution 5 feh.png",
+        "url": "nike_revolution_5_white"
+      },
+      {
+        "kep": "../img/cipők/Nike Revolution 5/Nike Revolution 5 k.png",
+        "url": "nike_revolution_5_blue"
+      }
+    ]
+  },
+
+  {
+    "id": "nike_revolution_5_white",
+    "rid" : "NR5",
+    "nev": "Nike Revolution 5 White Edition",
+    "nevSzin" : "Nike Revolution 5",
+    "ar": 29990,
+    "meretek": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "kepek": [
+      "../img/cipők/Nike Revolution 5/Nike Revolution 5 feh.png",
+      "../img/cipők/Nike Revolution 5/fehér/Nike Revolution 5 feh 1.png",
+      "../img/cipők/Nike Revolution 5/fehér/Nike Revolution 5 feh 2.png"
+    ],
+    "logo": "../img/logo/Nike fekete logo.png",
+    "valtozatok": [
+      {
+        "kep": "../img/cipők/Nike Revolution 5/Nike Revolution 5 1.png",
+        "url": "nike_revolution_5"
+      },
+      {
+        "kep": "../img/cipők/Nike Revolution 5/Nike Revolution 5 k.png",
+        "url": "nike_revolution_5_blue"
+      }
+    ]
+  },
+
+  {
+    "id": "nike_revolution_5_blue",
+    "rid" : "NR5B",
+    "nev": "Nike Revolution 5 Blue Edition",
+    "nevSzin" : "Nike Revolution 5",
+    "ar": 29990,
+    "meretek": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "kepek": [
+      "../img/cipők/Nike Revolution 5/Nike Revolution 5 k.png",
+      "../img/cipők/Nike Revolution 5/kék/Nike Revolution 5 kek 1.png",
+      "../img/cipők/Nike Revolution 5/kék/Nike Revolution 5 kek 2.png"
+    ],
+    "logo": "../img/logo/Nike fekete logo.png",
+    "valtozatok": [
+      {
+        "kep": "../img/cipők/Nike Revolution 5/Nike Revolution 5 1.png",
+        "url": "nike_revolution_5"
+      },
+      {
+        "kep": "../img/cipők/Nike Revolution 5/Nike Revolution 5 feh.png",
+        "url": "nike_revolution_5_white"
+      }
+    ]
+  },
+
+  {
+    "id": "yeezy_foam_runner",
+    "rid" : "YFR",
+    "nev": "Yeezy Foam Runner",
+    "nevSzin" : "Yeezy Foam Runner",
+    "ar": 95390,
+    "meretek": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "kepek": [
+      "../img/cipők/Yeezy Foam Runner/Yeezy Foam Runner 1.png",
+      "../img/cipők/Yeezy Foam Runner/Yeezy Foam Runner 2.png",
+      "../img/cipők/Yeezy Foam Runner/Yeezy Foam Runner 3.png"
+    ],
+    "logo": "../img/logo/Yeezy fekete logo.png",
+    "valtozatok": [
+      {
+        "kep": "../img/cipők/Yeezy Foam Runner/Yeezy Foam Runner feh.png",
+        "url": "yeezy_foam_runner_white"
+      },
+      {
+        "kep": "../img/cipők/Yeezy Foam Runner/Yeezy Foam Runner p.png",
+        "url": "yeezy_foam_runner_red"
+      }
+    ]
+  },
+
+  {
+    "id": "yeezy_foam_runner_white",
+    "rid" : "YFRW",
+    "nev": "Yeezy Foam Runner White Edition",
+    "nevSzin" : "Yeezy Foam Runner",
+    "ar": 95390,
+    "meretek": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "kepek": [
+      "../img/cipők/Yeezy Foam Runner/Yeezy Foam Runner feh.png",
+      "../img/cipők/Yeezy Foam Runner/feher/Yeezy Foam Runner feh 1.png",
+      "../img/cipők/Yeezy Foam Runner/feher/Yeezy Foam Runner feh 2.png"
+    ],
+    "logo": "../img/logo/Yeezy fekete logo.png",
+    "valtozatok": [
+      {
+        "kep": "../img/cipők/Yeezy Foam Runner/Yeezy Foam Runner 1.png",
+        "url": "yeezy_foam_runner"
+      },
+      {
+        "kep": "../img/cipők/Yeezy Foam Runner/Yeezy Foam Runner p.png",
+        "url": "yeezy_foam_runner_red"
+      }
+    ]
+  },
+
+  {
+    "id": "yeezy_foam_runner_red",
+    "rid" : "YFRR",
+    "nev": "Yeezy Foam Runner Red Edition",
+    "nevSzin" : "Yeezy Foam Runner",
+    "ar": 95390,
+    "meretek": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "kepek": [
+      "../img/cipők/Yeezy Foam Runner/Yeezy Foam Runner p.png",
+      "../img/cipők/Yeezy Foam Runner/piros/Yeezy Foam Runner pir 1.png",
+      "../img/cipők/Yeezy Foam Runner/piros/Yeezy Foam Runner pir 2.png"
+    ],
+    "logo": "../img/logo/Yeezy fekete logo.png",
+    "valtozatok": [
+      {
+        "kep": "../img/cipők/Yeezy Foam Runner/Yeezy Foam Runner 1.png",
+        "url": "yeezy_foam_runner"
+      },
+      {
+        "kep": "../img/cipők/Yeezy Foam Runner/Yeezy Foam Runner feh.png",
+        "url": "yeezy_foam_runner_white"
+      }
+    ]
+  },
+
+  {
+    "id": "ea7_rovid_szaru",
+    "rid" : "EA7r",
+    "nev": "EA7 rövid szárú",
+    "nevSzin" : "EA7 rövid szárú",
+    "ar": 71119,
+    "meretek": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "kepek": [
+      "../img/cipők/EA7 rövid szárú/EA7 rövid  szárú 1.png",
+      "../img/cipők/EA7 rövid szárú/EA7 rövid  szárú 2.png",
+      "../img/cipők/EA7 rövid szárú/EA7 rövid  szárú 3.png"
+    ],
+    "logo": "../img/logo/EA7 fekete logo.png",
+    "valtozatok": [
+      {
+        "kep": "../img/cipők/EA7 rövid szárú/fekete/ea7 rövidszáru fek2.png",
+        "url": "ea7_rovid_szaru_black"
+      },
+      {
+        "kep": "../img/cipők/EA7 rövid szárú/narancs/ea7 rövidszárú nar1.png",
+        "url": "ea7_rovid_szaru_orange"
+      }
+    ]
+  },
+
+  {
+    "id": "ea7_rovid_szaru_black",
+    "rid" : "EA7rB",
+    "nev": "EA7 rövid szárú Black Edition",
+    "nevSzin" : "EA7 rövid szárú",
+    "ar": 71119,
+    "meretek": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "kepek": [
+      "../img/cipők/EA7 rövid szárú/fekete/ea7 rövidszáru fek2.png",
+      "../img/cipők/EA7 rövid szárú/fekete/ea7 rövidszáru fek1.png",
+      "../img/cipők/EA7 rövid szárú/fekete/ea7 rövidszáru fek3.png"
+    ],
+    "logo": "../img/logo/EA7 fekete logo.png",
+    "valtozatok": [
+      {
+        "kep": "../img/cipők/EA7 rövid szárú/EA7 rövid  szárú 1.png",
+        "url": "ea7_rovid_szaru"
+      },
+      {
+        "kep": "../img/cipők/EA7 rövid szárú/narancs/ea7 rövidszárú nar1.png",
+        "url": "ea7_rovid_szaru_orange"
+      }
+    ]
+  },
+
+  {
+    "id": "ea7_rovid_szaru_orange",
+    "rid" : "EA7rB",
+    "nev": "EA7 rövid szárú Orange Edition",
+    "nevSzin" : "EA7 rövid szárú",
+    "ar": 71119,
+    "meretek": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "kepek": [
+      "../img/cipők/EA7 rövid szárú/narancs/ea7 rövidszárú nar1.png",
+      "../img/cipők/EA7 rövid szárú/narancs/ea7 rövidszárú nar2.png",
+      "../img/cipők/EA7 rövid szárú/narancs/ea7 rövidszárú nar3.png"
+    ],
+    "logo": "../img/logo/EA7 fekete logo.png",
+    "valtozatok": [
+      {
+        "kep": "../img/cipők/EA7 rövid szárú/EA7 rövid  szárú 1.png",
+        "url": "ea7_rovid_szaru"
+      },
+      {
+        "kep": "../img/cipők/EA7 rövid szárú/EA7 rövid  szárú fek.png",
+        "url": "ea7_rovid_szaru_black"
+      }
+    ]
+  },
+
+  {
+    "id": "nike_air_force_1",
+    "rid" : "NAF1",
+    "nev": "Nike Air Force 1",
+    "nevSzin" : "Nike Air Force 1",
+    "ar": 49990,
+    "meretek": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "kepek": [
+      "../img/cipők/főoldal/Nike Air Force 1 1.png",
+      "../img/cipők/Nike Air Force 1 '07/Nike Air Force 1 2.png",
+      "../img/cipők/Nike Air Force 1 '07/Nike Air Force 1 3.png"
+    ],
+    "logo": "../img/logo/Nike fekete logo.png",
+    "valtozatok": [
+      {
+        "kep": "../img/cipők/Nike Air Force 1 '07/Nike Air Force 1 fek.png",
+        "url": "nike_air_force_1_Black"
+      },
+      {
+        "kep": "../img/cipők/Nike Air Force 1 '07/Nike Air Force 1 k.png",
+        "url": "nike_air_force_1_Blue"
+      }
+    ]
+  },
+
+  {
+    "id": "nike_air_force_1_Black",
+    "rid" : "NAF1Ba",
+    "nev": "Nike Air Force 1 Black Edition",
+    "nevSzin" : "Nike Air Force 1",
+    "ar": 49990,
+    "meretek": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "kepek": [
+      "../img/cipők/Nike Air Force 1 '07/fekete/Nike Air Force fek1.png",
+      "../img/cipők/Nike Air Force 1 '07/fekete/Nike Air Force fek2.png",
+      "../img/cipők/Nike Air Force 1 '07/fekete/Nike Air Force fek3.png"
+    ],
+    "logo": "../img/logo/Nike fekete logo.png",
+    "valtozatok": [
+      {
+        "kep": "../img/cipők/főoldal/Nike Air Force 1 1.png",
+        "url": "nike_air_force_1"
+      },
+      {
+        "kep": "../img/cipők/Nike Air Force 1 '07/Nike Air Force 1 k.png",
+        "url": "nike_air_force_1_Blue"
+      }
+    ]
+  },
+
+  {
+    "id": "nike_air_force_1_Blue",
+    "rid" : "NAF1Bu",
+    "nev": "Nike Air Force 1 Black Edition",
+    "nevSzin" : "Nike Air Force 1",
+    "ar": 49990,
+    "meretek": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "kepek": [
+      "../img/cipők/Nike Air Force 1 '07/Nike Air Force 1 k.png",
+      "../img/cipők/Nike Air Force 1 '07/kek/Nike Air Force 1 kek 2.png",
+      "../img/cipők/Nike Air Force 1 '07/kek/Nike Air Force 1 kek 3.png"
+    ],
+    "logo": "../img/logo/Nike fekete logo.png",
+    "valtozatok": [
+      {
+        "kep": "../img/cipők/főoldal/Nike Air Force 1 1.png",
+        "url": "nike_air_force_1"
+      },
+      {
+        "kep": "../img/cipők/Nike Air Force 1 '07/Nike Air Force 1 fek.png",
+        "url": "nike_air_force_1_Black"
+      }
+    ]
   }
 ]
