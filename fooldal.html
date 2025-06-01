@@ -24,7 +24,7 @@
                 </a>
                 </div>
                 <div class="col-md-4 col-sm-12 szoveg2">
-                    <h1 class="fw-bold sz1 sz3"><span class="sz2">Nike Air Force 1 <span class="vonal1">| </span></span><br class="sort"><span class="sz2">49 990 Ft</span></h1>
+                    <h1 class="fw-bold sz1 sz3"><span class="sz2" id="sz2">dinamikus <span class="vonal1">| </span><br class="sort"><span class="sz2">dinamikus</span></span></h1>
         
              </div>
             </div>
@@ -56,6 +56,9 @@
     </script-->
     <script>
     tartalom_ell()
+    window.onload = () => {
+        tartalom_ell();
+    };
     async function tartalom_ell() {
         const response = await fetch('data/cipok.json');
         const termekek = await response.json();
@@ -65,7 +68,12 @@
         termekek.forEach(termek => {
             const db = termek.rid
             const div = document.createElement("div");
+            if (termek.rid === "NAF1") {
+                    document.getElementById("sz2").innerHTML = `${termek.nev} <span class="vonal1">| </span></span><br class="sort"><span class="sz2">${new Intl.NumberFormat('fr-FR').format(termek.ar)} Ft`
+                }
+
             if (db && megjelen.includes(db)) {
+
                 div.className = "col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3"
                 div.innerHTML = `
                 
