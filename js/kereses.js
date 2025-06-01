@@ -5,7 +5,7 @@ document.getElementById('fejlec').onload=function(){
 
 let cipok = [];
 
-fetch("../data/cipok.json")
+fetch("data/cipok.json")
   .then(response => response.json())
   .then(data => {
     cipok = data;
