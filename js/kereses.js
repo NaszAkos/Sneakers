@@ -16,12 +16,12 @@ fetch("data/cipok.json")
 function generateCipoList(lista) {
   const ul = document.getElementById("talalatok");
   // Törlés, kivéve a hr1-et
-  ul.innerHTML = '<hr id="hr1"><p id="nincs_tal">nincs találat <br><img class="mod_valtas" src="img/logo/nincs-talalat.png" alt=""></p><p id="ures"></p><p id="nincs_ker"><img class="mod_valtas" src="img/logo/nincs-kereses.png" alt=""></p>';
+  //ul.innerHTML = '<hr id="hr1"><p id="nincs_tal">nincs találat <br><img class="mod_valtas" src="img/logo/nincs-talalat.png" alt=""></p><p id="ures"></p><p id="nincs_ker"><img class="mod_valtas" src="img/logo/nincs-kereses.png" alt=""></p>';
   lista.forEach(cipo => {
     const li = document.createElement("li");
     li.innerHTML = `
       <a href="../cipok/cipok.html?id=${cipo.id}">${cipo.nev} | ${new Intl.NumberFormat('fr-FR').format(cipo.ar)} Ft</a>
-      <p class="talalat">${cipo.nev} ${cipo.ar} ${cipo.meretek}</p>
+      <p class="talalat">${cipo.nev} ${cipo.ar} Ft${cipo.meretek} ${new Intl.NumberFormat('fr-FR').format(cipo.ar)} Ft</p>
       <hr>
     `;
     ul.appendChild(li);
