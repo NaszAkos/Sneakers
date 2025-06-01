@@ -28,7 +28,7 @@ async function tartalom_ell() {
 
       li.innerHTML = `
         <a href="cipok/cipok.html?id=${termek.id}">
-          <img class="cipokep" src="${termek.kepek[0]}" alt="">
+          <img class="cipokep" src="${termek.kepek[0].slice(3)}" alt="">
           ${termek.nev} | <span class="meret_ki">${db} | </span> <span class="ar_ki">${new Intl.NumberFormat('fr-FR').format(termek.ar)} Ft</span>
         </a>
         <a class="eltavolitas" onclick="sessionStorage.setItem('${termek.rid}', '0'); tartalom_ell();">
