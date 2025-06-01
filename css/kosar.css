@@ -134,6 +134,9 @@ button {
 /* #fizetes, li, #hr1 #ures_kosar{
     transition: all 0.3s;
 } */
+.tel_valaszto{
+    display: none;
+}
 @media screen and (max-width: 500px){
     .fizetes{
         width: 150px;
@@ -149,10 +152,7 @@ button {
         margin-inline: auto;
     }
 }
-@media screen and (min-width: 768px){
-    .tel_valaszto{
-        display: none;
-    }
+@media screen and (min-width: 768px){       
     .ajanlas{
         padding-left: 2px;
     }
@@ -165,5 +165,8 @@ button {
 @media screen and (max-width: 991px){
     #fizetes, #kuponBevGomb{
         margin-inline: auto;
+    }
+    .tel_valaszto{
+        display: block;
     }
 }

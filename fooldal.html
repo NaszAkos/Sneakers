@@ -32,70 +32,16 @@
     <!--div onclick="localStorage.setItem('suti_elfogad', '0');location.reload();">gomb1</div>
     <div onclick="localStorage.setItem('suti_elfogad', '1');location.reload();">gomb2</div-->
     <div class="vonal-vizsz"></div>
-    <div class="row valasztasok">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+    <div class="row valasztasok" id="valasztasok">
+        <!-- <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
             <a href="cipok/cipok.html?id=yeezy_boost_350_v2">
                 <img class="Cipo" src="img/cipők/Yeezy Boost 350 V2/Yeezy Boost 350 V2 1.png" alt="Yeezy Boost 350 V2">
                 <h3>Yeezy Boost 350 V2<br>
                     108 490 Ft</h3>
             </a>
         </div>
-        <hr class="tel_valaszto">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
-            <a href="cipok/cipok.html?id=ea7_tornacipo">
-                <img class="Cipo" src="img/cipők/EA7 tornacipő/EA7 tornacipő 1.png" alt="EA7 tornacipő">
-                <h3>EA7 tornacipő<br>
-                    49 990 Ft</h3>
-            </a>
-        </div>
-        <hr class="tel_valaszto">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
-            <a href="cipok/cipok.html?id=adidas_superstar">
-                <img class="Cipo" src="img/cipők/Adidas Superstar/Adidas Superstar 1.png" alt="Adidas Superstar">
-                <h3>Adidas Superstar<br>
-                    60 490 Ft</h3>
-            </a>
-        </div>
-        <hr class="tel_valaszto">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
-            <a href="cipok/cipok.html?id=nike_air_jordan_4">
-                <img class="Cipo" src="img/cipők/Air Jordan 4/Air Jordan 4 1.png" alt="Nike Air Jordan 4">
-                <h3>Nike Air Jordan 4<br>
-                    249 990 Ft</h3>
-            </a>
-        </div>
-        <hr class="tel_valaszto">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
-            <a href="cipok/cipok.html?id=adidas_originals">
-                <img class="Cipo" src="img/cipők/Adidas Originals/Adidas originals 1.png" alt="Adidas Originals">
-                <h3>Adidas Originals<br>
-                    49 490 Ft</h3>
-            </a>
-        </div>
-        <hr class="tel_valaszto">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
-            <a href="cipok/cipok.html?id=nike_revolution_5">
-                <img class="Cipo" src="img/cipők/Nike Revolution 5/Nike Revolution 5 1.png" alt="Nike Revolution 5">
-                <h3>Nike Revolution 5<br>
-                    29 990 Ft</h3>
-            </a>
-        </div>
-        <hr class="tel_valaszto">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
-            <a href="cipok/cipok.html?id=yeezy_foam_runner">
-                <img class="Cipo" src="img/cipők/Yeezy Foam Runner/Yeezy Foam Runner 1.png" alt="Yeezy Foam Runner">
-                <h3>Yeezy Foam Runner<br>
-                    95 390 Ft</h3>
-            </a>
-        </div>
-        <hr class="tel_valaszto">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
-            <a href="cipok/cipok.html?id=ea7_rovid_szaru">
-                <img class="Cipo" src="img/cipők/EA7 rövid szárú/EA7 rövid  szárú 1.png" alt="EA7 rövid szárú">
-                <h3>EA7 rövid szárú <br>
-                    71 119 Ft</h3>
-            </a>
-        </div>
+        <hr class="tel_valaszto"> -->
+        
     </div>
     <div class="vonal-vizsz"></div>
     <iframe id="lablec"src="footer.html"></iframe>
@@ -108,6 +54,39 @@
         localStorage.setItem("megvolt", "1");
     }
     </script-->
+    <script>
+    tartalom_ell()
+    async function tartalom_ell() {
+        const response = await fetch('data/cipok.json');
+        const termekek = await response.json();
+        const kosarLista = document.getElementById("valasztasok");
+        let megjelen = ["AS", "AO", "YB", "EA7t", "NAJ4", "NR5", "YFR", "EA7r"]
+
+        termekek.forEach(termek => {
+            const db = termek.rid
+            const div = document.createElement("div");
+            if (db && megjelen.includes(db)) {
+                div.className = "col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3"
+                div.innerHTML = `
+                
+                    <a href="cipok/cipok.html?id=${termek.id}">
+                        <img class="Cipo" src="${termek.kepek[0].slice(3)}" alt="${termek.nev}">
+                        <h3>${termek.nev}<br>
+                        ${new Intl.NumberFormat('fr-FR').format(termek.ar)} Ft</h3>
+                    </a>
+                
+                
+                `;
+
+                kosarLista.appendChild(div);
+                const hr = document.createElement("hr");
+                hr.className = "tel_valaszto";
+                kosarLista.appendChild(hr);
+            }
+        });
+    }
+
+  </script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
 </body>

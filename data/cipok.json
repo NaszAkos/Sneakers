@@ -75,7 +75,6 @@
     ]
   },
 
-
   {
     "id": "adidas_originals",
     "rid" : "AO",
@@ -100,6 +99,7 @@
       }
     ]
   },
+
   {
     "id": "adidas_originals_black",
     "rid" : "AOB",
@@ -402,7 +402,7 @@
 
   {
     "id": "nike_revolution_5_white",
-    "rid" : "NR5",
+    "rid" : "NR5W",
     "nev": "Nike Revolution 5 White Edition",
     "nevSzin" : "Nike Revolution 5",
     "ar": 29990,

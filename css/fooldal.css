@@ -123,6 +123,9 @@ a{
     .tel_valaszto{
         display: block;
     }
+    .tel_valaszto:last-child{
+        display: none;
+    }
     .nepszeru img{
         width: 440px;
     }
