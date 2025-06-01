@@ -11,7 +11,7 @@ sessionStorage.setItem("YB", "1")*/
 window.onload = () => {
   ajanlasok_bet();
   script = document.createElement("script");
-  script.src = "../js/app.js";
+  script.src = "js/app.js";
   document.body.appendChild(script);
 };
 
