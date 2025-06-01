@@ -23,6 +23,7 @@
             
     </div>
     <script>
+        let ikon = document.getElementById('kosarDb');
         function handleKeyPress(event) {
             if (event.key === "Enter") {
                 keres()
@@ -41,9 +42,12 @@
     if (currentMode === "1") { // Sötét mód
         document.getElementById("vilagosModKep").style.display="none"
         document.getElementById("sotetModKep").style.display="block"
+        /* ikon.style.filter = "invert(1)"; */
+
     } else { // Világos mód
         document.getElementById("sotetModKep").style.display="none"
         document.getElementById("vilagosModKep").style.display="block"
+        /* ikon.style.filter = "none"; */
     }
 
 };
