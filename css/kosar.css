@@ -135,14 +135,13 @@ button {
 .tel_valaszto{
     display: none;
 }
-<<<<<<< HEAD
 
 .tel_valaszto:last-child{
     display: none       ;
-=======
+}
 .pad{
     padding-bottom: 3px;
->>>>>>> b4db2d5642bdfac3d3bc83e093b10f96fd6c24b0
+
 }
 @media screen and (max-width: 500px){
     .fizetes{
