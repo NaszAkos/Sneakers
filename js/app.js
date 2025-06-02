@@ -105,7 +105,13 @@ function lablec_meretez(){
     }
 }
 function sutik_meretez() {
-    
+    if (sessionStorage.getItem('suti_elfogad') === "1") { 
+        document.getElementById("sutik").style.display = "none";
+        document.getElementById("sutik").style.transition = '';
+
+    } else {
+        document.getElementById("sutik").style.display = "block";
+    }
 }
 
 

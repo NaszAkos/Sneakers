@@ -132,6 +132,8 @@ img{
 }
 .szoveg{
     width: 49,1%;
+    max-width: 50%;
+    
 }
 .also{
     width: 100%;
