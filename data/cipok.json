@@ -577,7 +577,7 @@
 
   {
     "id": "ea7_rovid_szaru_orange",
-    "rid" : "EA7rB",
+    "rid" : "EA7rR",
     "nev": "EA7 rövid szárú Orange Edition",
     "nevSzin" : "EA7 rövid szárú",
     "ar": 71119,
@@ -626,7 +626,7 @@
   },
 
   {
-    "id": "nike_air_force_1_Black",
+    "id": "nike_air_force_1_Blue",
     "rid" : "NAF1Ba",
     "nev": "Nike Air Force 1 Black Edition",
     "nevSzin" : "Nike Air Force 1",
