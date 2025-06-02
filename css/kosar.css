@@ -137,6 +137,10 @@ button {
 .tel_valaszto{
     display: none;
 }
+
+.tel_valaszto:last-child{
+    display: none       ;
+}
 @media screen and (max-width: 500px){
     .fizetes{
         width: 150px;

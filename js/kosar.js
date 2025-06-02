@@ -10,9 +10,9 @@ sessionStorage.setItem("YB", "1")*/
 
 window.onload = () => {
   ajanlasok_bet();
-  script = document.createElement("script");
+  /* script = document.createElement("script");
   script.src = "js/app.js";
-  document.body.appendChild(script);
+  document.body.appendChild(script); */
 };
 
 termekek = []
@@ -138,6 +138,10 @@ async function ajanlasok_bet() {
             const hr = document.createElement("hr");
             hr.className = "tel_valaszto";
             ajanlas.appendChild(hr);
+
+            script = document.createElement("script");
+            script.src = "js/app.js";
+            document.body.appendChild(script);
         }
     });
   
