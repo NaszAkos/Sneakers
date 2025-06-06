@@ -40,7 +40,7 @@ async function tartalom_ell() {
           ${termek.nev} | <span class="meret_ki">${db} | </span> <span class="ar_ki">${new Intl.NumberFormat('fr-FR').format(termek.ar)} Ft</span>
         </a>
         <a class="eltavolitas" onclick="sessionStorage.setItem('${termek.rid}', '0'); tartalom_ell();">
-          <img class="mod_valtas" src="img/logo/Eltávolítás.png" alt="">
+          <img class="mod_valtas" src="img/logo/Eltávolítás.png" alt="Eltávolítás">
         </a>
         <hr>
       `;

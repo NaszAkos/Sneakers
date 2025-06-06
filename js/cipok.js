@@ -38,11 +38,11 @@ let termekNevGlob = "";
     const valtozatok = document.querySelector(".szin_kep");
     valtozatok.innerHTML = termek.valtozatok.map(v => `
       <div class="kep1 col-6" onclick="window.location.href = 'cipok.html?id=${v.url}'">
-        <img src="${v.kep}" alt="">
+        <img src="${(termekek.find(cipo => v.url === cipo.id)).kepek[0]}" alt="">
         <div class="cipoleiras">
-          <h3>${termek.nevSzin}</h3>
-          <h5 class="extrameret">${termek.meretek.slice(0, 5).join(" ")} +${termek.meretek.length - 5}</h5>
-          <h4 class="extraara">${termek.ar.toLocaleString()} Ft</h4>
+          <h3>${(termekek.find(cipo => v.url === cipo.id)).nev}</h3>
+          <h5 class="extrameret">${(termekek.find(cipo => v.url === cipo.id)).meretek.slice(0, 5).join(" ")} +${(termekek.find(cipo => v.url === cipo.id)).meretek.length - 5}</h5>
+          <h4 class="extraara">${((termekek.find(cipo => v.url === cipo.id)).ar).toLocaleString()} Ft</h4>
         </div>
       </div>
     `).join("");

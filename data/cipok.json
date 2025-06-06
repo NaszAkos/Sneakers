@@ -1,6 +1,6 @@
 [
   {
-    "segítség": "Path Intellisense telepíteni a vs kódba és megjelennek a fájl lehetőségek",
+    "segítség": "Path Intellisense telepíteni a vs kódba és megjelennek a fájl lehetőségek js ben is",
     "id": "adidas_superstar",
     "rid" : "AS",
     "nev": "Adidas Superstar",
@@ -15,11 +15,9 @@
     "logo": "../img/logo/adidas fekete logo.png",
     "valtozatok": [
       {
-        "kep": "../img/cipők/Adidas Superstar/Adidas Superstar feh.png",
         "url": "adidas_superstar_white"
       },
       {
-        "kep": "../img/cipők/Adidas Superstar/Adidas Superstar pir.png",
         "url": "adidas_superstar_red"
       }
     ]
@@ -40,11 +38,9 @@
     "logo": "../img/logo/adidas fekete logo.png",
     "valtozatok": [
       {
-        "kep": "../img/cipők/Adidas Superstar/Adidas Superstar 1.png",
         "url": "adidas_superstar"
       },
       {
-        "kep": "../img/cipők/Adidas Superstar/Adidas Superstar pir.png",
         "url": "adidas_superstar_red"
       }
     ]
@@ -65,11 +61,9 @@
     "logo": "../img/logo/adidas fekete logo.png",
     "valtozatok": [
       {
-        "kep": "../img/cipők/Adidas Superstar/Adidas Superstar 1.png",
         "url": "adidas_superstar"
       },
       {
-        "kep": "../img/cipők/Adidas Superstar/Adidas Superstar feh.png",
         "url": "adidas_superstar_white"
       }
     ]
@@ -90,11 +84,9 @@
     "logo": "../img/logo/adidas fekete logo.png",
     "valtozatok": [
       {
-        "kep": "../img/cipők/Adidas Originals/Adidas originals fek.png",
         "url": "adidas_originals_black"
       },
       {
-        "kep": "../img/cipők/Adidas Originals/Adidas originals p.png",
         "url": "adidas_originals_red"
       }
     ]
@@ -115,11 +107,9 @@
     "logo": "../img/logo/adidas fekete logo.png",
     "valtozatok": [
       {
-        "kep": "../img/cipők/Adidas Originals/Adidas originals 1.png",
         "url": "adidas_originals"
       },
       {
-        "kep": "../img/cipők/Adidas Originals/Adidas originals p.png",
         "url": "adidas_originals_red"
       }
     ]
@@ -140,11 +130,9 @@
     "logo": "../img/logo/adidas fekete logo.png",
     "valtozatok": [
       {
-        "kep": "../img/cipők/Adidas Originals/Adidas originals 1.png",
         "url": "adidas_originals"
       },
       {
-        "kep": "../img/cipők/Adidas Originals/Adidas originals fek.png",
         "url": "adidas_originals_black"
       }
     ]
@@ -165,11 +153,9 @@
     "logo": "../img/logo/EA7 fekete logo.png",
     "valtozatok": [
       {
-        "kep": "../img/cipők/Yeezy Boost 350 V2/Yeezy Boost 350 V2 feh.png",
         "url": "yeezy_boost_350_v2_white"
       },
       {
-        "kep": "../img/cipők/Yeezy Boost 350 V2/Yeezy Boost 350 V2 z.png",
         "url": "yeezy_boost_350_v2_zebra"
       }
     ]
@@ -190,11 +176,9 @@
     "logo": "../img/logo/EA7 fekete logo.png",
     "valtozatok": [
       {
-        "kep": "../img/cipők/Yeezy Boost 350 V2/Yeezy Boost 350 V2 1.png",
         "url": "yeezy_boost_350_v2"
       },
       {
-        "kep": "../img/cipők/Yeezy Boost 350 V2/Yeezy Boost 350 V2 z.png",
         "url": "yeezy_boost_350_v2_zebra"
       }
     ]
@@ -215,11 +199,9 @@
     "logo": "../img/logo/EA7 fekete logo.png",
     "valtozatok": [
       {
-        "kep": "../img/cipők/Yeezy Boost 350 V2/Yeezy Boost 350 V2 1.png",
         "url": "yeezy_boost_350_v2"
       },
       {
-        "kep": "../img/cipők/Yeezy Boost 350 V2/Yeezy Boost 350 V2 z.png",
         "url": "yeezy_boost_350_v2_zebra"
       }
     ]
@@ -240,11 +222,10 @@
     "logo": "../img/logo/EA7 fekete logo.png",
     "valtozatok": [
       {
-        "kep": "../img/cipők/EA7 tornacipő/EA7 tornacipő feh.png",
         "url": "ea7_tornacipo_white"
       },
       {
-        "kep": "../img/cipők/EA7 tornacipő/EA7 tornacipő k.png",
+
         "url": "ea7_tornacipo_blue"
       }
     ]
@@ -265,11 +246,9 @@
     "logo": "../img/logo/EA7 fekete logo.png",
     "valtozatok": [
       {
-        "kep": "../img/cipők/EA7 tornacipő/EA7 tornacipő 1.png",
         "url": "ea7_tornacipo"
       },
       {
-        "kep": "../img/cipők/EA7 tornacipő/EA7 tornacipő k.png",
         "url": "ea7_tornacipo_blue"
       }
     ]
@@ -290,11 +269,9 @@
     "logo": "../img/logo/EA7 fekete logo.png",
     "valtozatok": [
       {
-        "kep": "../img/cipők/EA7 tornacipő/EA7 tornacipő 1.png",
         "url": "ea7_tornacipo"
       },
       {
-        "kep": "../img/cipők/EA7 tornacipő/EA7 tornacipő feh.png",
         "url": "ea7_tornacipo_white"
       }
     ]
@@ -315,11 +292,9 @@
     "logo": "../img/logo/Nike fekete logo.png",
     "valtozatok": [
       {
-        "kep": "../img/cipők/Air Jordan 4/Air Jordan 4 fek.png",
         "url": "nike_air_jordan_4_black"
       },
       {
-        "kep": "../img/cipők/Air Jordan 4/Air Jordan 4 pir.png",
         "url": "nike_air_jordan_4_red"
       }
     ]
@@ -340,11 +315,9 @@
     "logo": "../img/logo/Nike fekete logo.png",
     "valtozatok": [
       {
-        "kep": "../img/cipők/Air Jordan 4/Air Jordan 4 1.png",
         "url": "nike_air_jordan_4"
       },
       {
-        "kep": "../img/cipők/Air Jordan 4/Air Jordan 4 pir.png",
         "url": "nike_air_jordan_4_red"
       }
     ]
@@ -365,11 +338,9 @@
     "logo": "../img/logo/Nike fekete logo.png",
     "valtozatok": [
       {
-        "kep": "../img/cipők/Air Jordan 4/Air Jordan 4 fek.png",
         "url": "nike_air_jordan_4_black"
       },
       {
-        "kep": "../img/cipők/Air Jordan 4/Air Jordan 4 1.png",
         "url": "nike_air_jordan_4"
       }
     ]
@@ -390,11 +361,9 @@
     "logo": "../img/logo/Nike fekete logo.png",
     "valtozatok": [
       {
-        "kep": "../img/cipők/Nike Revolution 5/Nike Revolution 5 feh.png",
         "url": "nike_revolution_5_white"
       },
       {
-        "kep": "../img/cipők/Nike Revolution 5/Nike Revolution 5 k.png",
         "url": "nike_revolution_5_blue"
       }
     ]
@@ -415,11 +384,9 @@
     "logo": "../img/logo/Nike fekete logo.png",
     "valtozatok": [
       {
-        "kep": "../img/cipők/Nike Revolution 5/Nike Revolution 5 1.png",
         "url": "nike_revolution_5"
       },
       {
-        "kep": "../img/cipők/Nike Revolution 5/Nike Revolution 5 k.png",
         "url": "nike_revolution_5_blue"
       }
     ]
@@ -440,11 +407,9 @@
     "logo": "../img/logo/Nike fekete logo.png",
     "valtozatok": [
       {
-        "kep": "../img/cipők/Nike Revolution 5/Nike Revolution 5 1.png",
         "url": "nike_revolution_5"
       },
       {
-        "kep": "../img/cipők/Nike Revolution 5/Nike Revolution 5 feh.png",
         "url": "nike_revolution_5_white"
       }
     ]
@@ -465,11 +430,9 @@
     "logo": "../img/logo/Yeezy fekete logo.png",
     "valtozatok": [
       {
-        "kep": "../img/cipők/Yeezy Foam Runner/Yeezy Foam Runner feh.png",
         "url": "yeezy_foam_runner_white"
       },
       {
-        "kep": "../img/cipők/Yeezy Foam Runner/Yeezy Foam Runner p.png",
         "url": "yeezy_foam_runner_red"
       }
     ]
@@ -490,11 +453,9 @@
     "logo": "../img/logo/Yeezy fekete logo.png",
     "valtozatok": [
       {
-        "kep": "../img/cipők/Yeezy Foam Runner/Yeezy Foam Runner 1.png",
         "url": "yeezy_foam_runner"
       },
       {
-        "kep": "../img/cipők/Yeezy Foam Runner/Yeezy Foam Runner p.png",
         "url": "yeezy_foam_runner_red"
       }
     ]
@@ -515,11 +476,9 @@
     "logo": "../img/logo/Yeezy fekete logo.png",
     "valtozatok": [
       {
-        "kep": "../img/cipők/Yeezy Foam Runner/Yeezy Foam Runner 1.png",
         "url": "yeezy_foam_runner"
       },
       {
-        "kep": "../img/cipők/Yeezy Foam Runner/Yeezy Foam Runner feh.png",
         "url": "yeezy_foam_runner_white"
       }
     ]
@@ -540,11 +499,9 @@
     "logo": "../img/logo/EA7 fekete logo.png",
     "valtozatok": [
       {
-        "kep": "../img/cipők/EA7 rövid szárú/fekete/ea7 rövidszáru fek2.png",
         "url": "ea7_rovid_szaru_black"
       },
       {
-        "kep": "../img/cipők/EA7 rövid szárú/narancs/ea7 rövidszárú nar1.png",
         "url": "ea7_rovid_szaru_orange"
       }
     ]
@@ -565,11 +522,9 @@
     "logo": "../img/logo/EA7 fekete logo.png",
     "valtozatok": [
       {
-        "kep": "../img/cipők/EA7 rövid szárú/EA7 rövid  szárú 1.png",
         "url": "ea7_rovid_szaru"
       },
       {
-        "kep": "../img/cipők/EA7 rövid szárú/narancs/ea7 rövidszárú nar1.png",
         "url": "ea7_rovid_szaru_orange"
       }
     ]
@@ -590,11 +545,9 @@
     "logo": "../img/logo/EA7 fekete logo.png",
     "valtozatok": [
       {
-        "kep": "../img/cipők/EA7 rövid szárú/EA7 rövid  szárú 1.png",
         "url": "ea7_rovid_szaru"
       },
       {
-        "kep": "../img/cipők/EA7 rövid szárú/EA7 rövid  szárú fek.png",
         "url": "ea7_rovid_szaru_black"
       }
     ]
@@ -606,7 +559,7 @@
     "nev": "Nike Air Force 1",
     "nevSzin" : "Nike Air Force 1",
     "ar": 49990,
-    "meretek": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "meretek": [37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
     "kepek": [
       "../img/cipők/Nike Air Force 1 '07/Nike Air Force 1 1.png",
       "../img/cipők/Nike Air Force 1 '07/Nike Air Force 1 2.png",
@@ -615,18 +568,16 @@
     "logo": "../img/logo/Nike fekete logo.png",
     "valtozatok": [
       {
-        "kep": "../img/cipők/Nike Air Force 1 '07/Nike Air Force 1 fek.png",
         "url": "nike_air_force_1_Black"
       },
       {
-        "kep": "../img/cipők/Nike Air Force 1 '07/Nike Air Force 1 k.png",
         "url": "nike_air_force_1_Blue"
       }
     ]
   },
 
   {
-    "id": "nike_air_force_1_Blue",
+    "id": "nike_air_force_1_Black",
     "rid" : "NAF1Ba",
     "nev": "Nike Air Force 1 Black Edition",
     "nevSzin" : "Nike Air Force 1",
@@ -640,11 +591,9 @@
     "logo": "../img/logo/Nike fekete logo.png",
     "valtozatok": [
       {
-        "kep": "../img/cipők/Nike Air Force 1 '07/Nike Air Force 1 1.png",
         "url": "nike_air_force_1"
       },
       {
-        "kep": "../img/cipők/Nike Air Force 1 '07/Nike Air Force 1 k.png",
         "url": "nike_air_force_1_Blue"
       }
     ]
@@ -653,7 +602,7 @@
   {
     "id": "nike_air_force_1_Blue",
     "rid" : "NAF1Bu",
-    "nev": "Nike Air Force 1 Black Edition",
+    "nev": "Nike Air Force 1 Blue Edition",
     "nevSzin" : "Nike Air Force 1",
     "ar": 49990,
     "meretek": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
@@ -665,11 +614,9 @@
     "logo": "../img/logo/Nike fekete logo.png",
     "valtozatok": [
       {
-        "kep": "../img/cipők/Nike Air Force 1 '07/Nike Air Force 1 1.png",
         "url": "nike_air_force_1"
       },
       {
-        "kep": "../img/cipők/Nike Air Force 1 '07/Nike Air Force 1 fek.png",
         "url": "nike_air_force_1_Black"
       }
     ]

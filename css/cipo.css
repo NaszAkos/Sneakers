@@ -130,11 +130,6 @@ img{
 .szoveg .row, .visz1, .also{
     width: 99%;
 }
-.szoveg{
-    width: 49,1%;
-    max-width: 50%;
-    
-}
 .also{
     width: 100%;
     margin-top: 50px;
@@ -180,5 +175,15 @@ img{
     }
     .szin_kep .col-6{
         margin-bottom: 0px ;
+    }
+    .szoveg h1{
+        margin-left: 1%;
+    }
+    .meretek{
+        margin-left: 0%;    
+    }
+    .kep1{
+        width: 100%;
+        margin-top: 20px;
     }
 }
